@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/courses/University courses/Design Automation/Homeworks/HW3/codes/HW3/HW3.srcs/sources_1/new/Genom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Genom
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/courses/University courses/Design Automation/Homeworks/HW3/codes/HW3/HW3.srcs/sources_1/new/TB.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB

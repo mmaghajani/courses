@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Mar 28 09:17:31 2017
+# Process ID: 13100
+# Current directory: D:/courses/University courses/Design Automation/Homeworks/HW3/codes/HW3/HW3.runs/synth_1
+# Command line: vivado.exe -log TB.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TB.tcl
+# Log file: D:/courses/University courses/Design Automation/Homeworks/HW3/codes/HW3/HW3.runs/synth_1/TB.vds
+# Journal file: D:/courses/University courses/Design Automation/Homeworks/HW3/codes/HW3/HW3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TB.tcl -notrace

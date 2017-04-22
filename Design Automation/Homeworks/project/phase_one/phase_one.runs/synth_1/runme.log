@@ -1,0 +1,338 @@
+
+*** Running vivado
+    with args -log BCD_8x8_multiplier.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BCD_8x8_multiplier.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source BCD_8x8_multiplier.tcl -notrace
+Command: synth_design -top BCD_8x8_multiplier -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11596 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 327.020 ; gain = 117.273
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port a is neither a static name nor a globally static expression [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:51]
+WARNING: [Synth 8-1565] actual for formal port b is neither a static name nor a globally static expression [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:51]
+WARNING: [Synth 8-1565] actual for formal port a is neither a static name nor a globally static expression [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:52]
+WARNING: [Synth 8-1565] actual for formal port a is neither a static name nor a globally static expression [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:53]
+WARNING: [Synth 8-1565] actual for formal port input2 is neither a static name nor a globally static expression [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'BCD_8x8_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_8x8_multiplier.vhd:47]
+INFO: [Synth 8-3491] module 'BCD_1x8_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:34' bound to instance 'BCD_mul' of component 'BCD_1x8_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_8x8_multiplier.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'BCD_1x8_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:41]
+INFO: [Synth 8-3491] module 'BCD_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:34' bound to instance 'com0' of component 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:41]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/half_adder.vhd:35' bound to instance 'HA1' of component 'half_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'half_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/half_adder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'half_adder' (1#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/half_adder.vhd:40]
+INFO: [Synth 8-3491] module 'half_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/half_adder.vhd:35' bound to instance 'HA2' of component 'half_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:93]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA1' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (2#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:40]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA2' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:96]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA3' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:97]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA4' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:98]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA5' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:99]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA6' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:100]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA7' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:101]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:34' bound to instance 'MA1' of component 'multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:41]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA1' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:51]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA2' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:52]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/full_adder.vhd:34' bound to instance 'FA3' of component 'full_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (3#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:41]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:34' bound to instance 'MA2' of component 'multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:104]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:34' bound to instance 'MA3' of component 'multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:105]
+INFO: [Synth 8-3491] module 'multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/multiplier.vhd:34' bound to instance 'MA4' of component 'multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:106]
+INFO: [Synth 8-3491] module 'BinaryToBCD' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BinaryToBCD.vhd:5' bound to instance 'bcd' of component 'BinaryToBCD' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'BinaryToBCD' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BinaryToBCD.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'BinaryToBCD' (4#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BinaryToBCD.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'BCD_multiplier' (5#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:41]
+INFO: [Synth 8-3491] module 'BCD_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:34' bound to instance 'com1' of component 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:64]
+INFO: [Synth 8-3491] module 'BCD_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:34' bound to instance 'com2' of component 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:65]
+INFO: [Synth 8-3491] module 'BCD_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:34' bound to instance 'com3' of component 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:66]
+INFO: [Synth 8-3491] module 'BCD_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:34' bound to instance 'com4' of component 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:67]
+INFO: [Synth 8-3491] module 'BCD_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:34' bound to instance 'com5' of component 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:68]
+INFO: [Synth 8-3491] module 'BCD_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:34' bound to instance 'com6' of component 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:69]
+INFO: [Synth 8-3491] module 'BCD_multiplier' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/new/BCD_multiplier.vhd:34' bound to instance 'com7' of component 'BCD_multiplier' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:70]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'adder0' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'BCD_adder' (6#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:13]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'adder1' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:74]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'adder2' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:76]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'adder3' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:78]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'adder4' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:80]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'adder5' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:82]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'adder6' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:84]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'adder7' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'BCD_1x8_multiplier' (7#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_1x8_multiplier.vhd:41]
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'N_digit_BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:34' bound to instance 'BCD_add' of component 'N_digit_BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_8x8_multiplier.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'N_digit_BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:45]
+	Parameter N bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:58]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-3491] module 'BCD_adder' declared at 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_adder.vhd:5' bound to instance 'BCD' of component 'BCD_adder' [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'N_digit_BCD_adder' (8#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/N_digit_BCD_adder.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'BCD_8x8_multiplier' (9#1) [D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.srcs/sources_1/imports/sim_1/imports/new/BCD_8x8_multiplier.vhd:47]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 361.219 ; gain = 151.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 361.219 ; gain = 151.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 361.219 ; gain = 151.473
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 378.785 ; gain = 169.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 25    
+	   2 Input      4 Bit       Adders := 121   
+	   2 Input      2 Bit       Adders := 16    
+	   3 Input      2 Bit       Adders := 152   
++---Registers : 
+	               68 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 82    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module BCD_8x8_multiplier 
+Detailed RTL Component Info : 
++---Registers : 
+	               68 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module half_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
+Module full_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      2 Bit       Adders := 1     
+Module BinaryToBCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 12    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+Module BCD_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'reg_reg[0]' (FDRE) to 'reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'reg_reg[1]' (FDRE) to 'reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'reg_reg[2]' (FDRE) to 'reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\reg_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (reg_reg[3]) is unused and will be removed from module BCD_8x8_multiplier.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:05:05 ; elapsed = 00:05:14 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:05 ; elapsed = 00:05:14 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:05 ; elapsed = 00:05:15 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |    33|
+|4     |LUT2   |    55|
+|5     |LUT3   |    26|
+|6     |LUT4   |   143|
+|7     |LUT5   |    76|
+|8     |LUT6   |   263|
+|9     |FDRE   |    96|
+|10    |IBUF   |    66|
+|11    |OBUF   |    68|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   839|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 721.449 ; gain = 511.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:05:02 ; elapsed = 00:05:07 . Memory (MB): peak = 721.449 ; gain = 450.574
+Synthesis Optimization Complete : Time (s): cpu = 00:05:06 ; elapsed = 00:05:16 . Memory (MB): peak = 721.449 ; gain = 511.703
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:11 ; elapsed = 00:05:18 . Memory (MB): peak = 759.902 ; gain = 522.641
+INFO: [Common 17-1381] The checkpoint 'D:/courses/University courses/Design Automation/Homeworks/project/phase_one/phase_one.runs/synth_1/BCD_8x8_multiplier.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 759.902 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 30 12:59:25 2017...
