@@ -1,0 +1,89 @@
+{D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache_tb.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache_tb.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cache_tb
+-- Compiling architecture test_bench of cache_tb
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/lru_array.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/lru_array.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity lru_array
+-- Compiling architecture dataflow of lru_array
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/Tag-Valid_array.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/Tag-Valid_array.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tag_valid_array
+-- Compiling architecture dataflow of tag_valid_array
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram_cache
+-- Compiling architecture data_flow of ram_cache
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/controller.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/controller.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity controller
+-- Compiling architecture behavioral of controller
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/data_array.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/data_array.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity data_array
+-- Compiling architecture dataflow of data_array
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ram
+-- Compiling architecture dataflow of ram
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/miss-hit logic.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/miss-hit logic.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity miss_hit_logic
+-- Compiling architecture gate_level of miss_hit_logic
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache_tb.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache_tb.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cache_ram_tb
+-- Compiling architecture test_bench of cache_ram_tb
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cache
+-- Compiling architecture data_flow of cache
+
+} {} {}}

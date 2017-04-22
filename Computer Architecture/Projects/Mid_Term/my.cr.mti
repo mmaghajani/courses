@@ -1,0 +1,21 @@
+{D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ALU.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:\courses\University courses\Computer Architecture\Projects\Mid_Term\ALU.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity alu
+-- Compiling architecture data_flow of alu
+
+} {} {}} {D:/courses/University courses/Computer Architecture/Projects/Mid_Term/counter.vhd} {1 {vcom -work work -2002 -explicit -vopt {D:\courses\University courses\Computer Architecture\Projects\Mid_Term\counter.vhd}
+Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity counter
+-- Compiling architecture data_flow of counter
+
+} {} {}}

@@ -1,0 +1,489 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech64_10.1c\examples
+T_opt
+V`hL1jdONPNYTG6FZ:[K_02
+04 7 9 work counter data_flow 1
+=1-1cb72ca0514d-57093fb5-95-1958
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.1c;51
+T_opt1
+V::K3;[:<?j9<N8<?IEb2B0
+04 9 9 work ram_cache data_flow 1
+=1-1cb72ca0514d-56fa7152-34e-19d0
+R1
+n@_opt1
+R2
+Z3 dC:\modeltech64_10.1c\examples
+T_opt2
+V>>L8D@7:i1NgNU;3PZB]A1
+04 12 10 work cache_ram_tb test_bench 1
+=1-1cb72ca0514d-5702bd0f-113-146c
+R1
+n@_opt2
+R2
+R3
+Ealu
+Z4 w1459787135
+Z5 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z6 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z7 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z8 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z9 dD:\courses\University courses\Computer Architecture\Projects\Mid_Term
+Z10 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ALU.vhd
+Z11 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/ALU.vhd
+l0
+L5
+VT``?gR:gbN0]P:?5^Y1`P1
+Z12 OL;C;10.1c;51
+32
+Z13 !s108 1460223875.459000
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ALU.vhd|
+Z15 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ALU.vhd|
+Z16 o-work work -2002 -explicit
+Z17 tExplicit 1
+!s100 [k?V_zK>9O2=9TT38zd0h2
+!i10b 1
+Adata_flow
+R5
+R6
+R7
+R8
+DEx4 work 3 alu 0 22 T``?gR:gbN0]P:?5^Y1`P1
+l16
+L15
+VkLQa^Ef>?^Nzbfoh6`JN`0
+R12
+32
+R13
+R14
+R15
+R16
+R17
+!s100 Ylh24oMQn6gzYA==I=8Fa0
+!i10b 1
+Ecache
+Z18 w1459871514
+Z19 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R7
+R8
+R9
+Z20 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache.vhd
+Z21 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache.vhd
+l0
+L5
+VaNi[fkoacjj3M54V;Z=TK1
+R12
+32
+Z22 !s108 1459871519.671000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache.vhd|
+Z24 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache.vhd|
+R16
+R17
+!s100 H;LzU55nmfcVz077d92F=1
+!i10b 1
+Adata_flow
+R19
+R7
+R8
+DEx4 work 5 cache 0 22 aNi[fkoacjj3M54V;Z=TK1
+32
+l78
+L19
+Vh0;nzh4kFOQflF41;dmX[3
+R12
+R22
+R23
+R24
+R16
+R17
+!s100 YX@3:<;Y6YlYPGza8l`710
+!i10b 1
+Ecache_ram_tb
+Z25 w1459868028
+R19
+R7
+R8
+R9
+Z26 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache_tb.vhd
+Z27 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache_tb.vhd
+l0
+L5
+VKF>ONYWSGYRh[oo8e4o_D2
+R12
+32
+Z28 !s108 1459871520.431000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache_tb.vhd|
+Z30 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache_tb.vhd|
+R16
+R17
+!s100 ?dSO`C6jaOVnQHQMR?aW10
+!i10b 1
+Atest_bench
+R19
+R7
+R8
+DEx4 work 12 cache_ram_tb 0 22 KF>ONYWSGYRh[oo8e4o_D2
+32
+l27
+L8
+VNgJiM6EYZ;>dQO@cI7c0>1
+R12
+R28
+R29
+R30
+R16
+R17
+!s100 iUnG321lizTQX8f4CzLGR2
+!i10b 1
+Ecache_tb
+Z31 w1459790049
+R19
+R7
+R8
+R9
+Z32 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache_tb.vhd
+Z33 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache_tb.vhd
+l0
+L5
+VkZ:z;_O44K0_?kj;6ZWVe3
+R12
+32
+Z34 !s108 1459871520.039000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache_tb.vhd|
+Z36 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/cache_tb.vhd|
+R16
+R17
+!s100 Cdz2WJ>SiU<MCO:^zW^e:1
+!i10b 1
+Atest_bench
+R19
+R7
+R8
+DEx4 work 8 cache_tb 0 22 kZ:z;_O44K0_?kj;6ZWVe3
+l31
+L8
+VRdYT=^8gm`AbH=VQ<F1n23
+R12
+32
+R34
+R35
+R36
+R16
+R17
+!s100 2c?Z9m`mPFlbK1X:i21kf1
+!i10b 1
+Econtroller
+Z37 w1459844182
+R7
+R8
+R9
+Z38 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/controller.vhd
+Z39 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/controller.vhd
+l0
+L4
+Vn5Q^_Z>>:8;86@VGdUWJ40
+R12
+32
+Z40 !s108 1459871519.287000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/controller.vhd|
+Z42 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/controller.vhd|
+R16
+R17
+!s100 jjK?S==D0WjE02;nXbzKH3
+!i10b 1
+Abehavioral
+R7
+R8
+DEx4 work 10 controller 0 22 n5Q^_Z>>:8;86@VGdUWJ40
+32
+l23
+L19
+V9GZ^TUmSQlmcgBzBg]cm=1
+R12
+R40
+R41
+R42
+R16
+R17
+!s100 dO:iEJdz=044Yzo^?MD1Q3
+!i10b 1
+Ecounter
+Z43 w1459787132
+R5
+R6
+R7
+R8
+R9
+Z44 8D:\courses\University courses\Computer Architecture\Projects\Mid_Term\counter.vhd
+Z45 FD:\courses\University courses\Computer Architecture\Projects\Mid_Term\counter.vhd
+l0
+L5
+V6C];n@@PLHX?2<U1^S3VF0
+R12
+32
+Z46 !s108 1460223875.881000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:\courses\University courses\Computer Architecture\Projects\Mid_Term\counter.vhd|
+Z48 !s107 D:\courses\University courses\Computer Architecture\Projects\Mid_Term\counter.vhd|
+R16
+R17
+!s100 U@`T?LlU`2M]Jd_U1:KOI0
+!i10b 1
+Adata_flow
+R5
+R6
+R7
+R8
+DEx4 work 7 counter 0 22 6C];n@@PLHX?2<U1^S3VF0
+l17
+L13
+Vd>>=@deF_ck^Y0aX:;2lP3
+R12
+32
+R46
+R47
+R48
+R16
+R17
+!s100 <Yo`gB9L^<M?HN<QSlWac3
+!i10b 1
+Edata_array
+Z49 w1459790703
+R19
+R7
+R8
+R9
+Z50 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/data_array.vhd
+Z51 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/data_array.vhd
+l0
+L5
+VFAF92;TA@ULJh7an@U0kF2
+R12
+32
+Z52 !s108 1459871517.210000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/data_array.vhd|
+Z54 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/data_array.vhd|
+R16
+R17
+!s100 LN[U3o?Bnj8RQ=6h34NaR2
+!i10b 1
+Adataflow
+R19
+R7
+R8
+DEx4 work 10 data_array 0 22 FAF92;TA@ULJh7an@U0kF2
+32
+l21
+L15
+V[nPF8YQnmUm]MGm8UX_>U3
+R12
+R52
+R53
+R54
+R16
+R17
+!s100 <XC8VUGGOCZ:NBIU;02U?3
+!i10b 1
+Elru_array
+Z55 w1459803372
+R19
+R7
+R8
+R9
+Z56 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/lru_array.vhd
+Z57 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/lru_array.vhd
+l0
+L5
+VE7mXbL0l[cF=j8ZfB2A?g2
+R12
+32
+Z58 !s108 1459871517.510000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/lru_array.vhd|
+Z60 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/lru_array.vhd|
+R16
+R17
+!s100 _SA@HLoOYJ3AH^J8Q:9a51
+!i10b 1
+Adataflow
+R19
+R7
+R8
+DEx4 work 9 lru_array 0 22 E7mXbL0l[cF=j8ZfB2A?g2
+32
+l22
+L17
+V7HY9^k=7<K7l5hN2A1R3V0
+R12
+R58
+R59
+R60
+R16
+R17
+!s100 `L6Sf9oc@ZPPX<B9jNdWm2
+!i10b 1
+Emiss_hit_logic
+Z61 w1458938082
+R7
+R8
+R9
+Z62 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/miss-hit logic.vhd
+Z63 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/miss-hit logic.vhd
+l0
+L4
+V=YmK=R5<^zzOdX]^K]<]Z2
+R12
+32
+Z64 !s108 1459871517.827000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/miss-hit logic.vhd|
+Z66 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/miss-hit logic.vhd|
+R16
+R17
+!s100 67HPE:7AK_82?ibo=6Ooo2
+!i10b 1
+Agate_level
+R7
+R8
+Z67 DEx4 work 14 miss_hit_logic 0 22 =YmK=R5<^zzOdX]^K]<]Z2
+32
+l19
+L14
+Vb8hPd0g[HCLh[a]J_aV6b1
+R12
+R64
+R65
+R66
+R16
+R17
+!s100 `:ZeDgEFz7DII26VN11Dc2
+!i10b 1
+Adataflow
+R7
+R8
+R67
+l15
+L14
+VZa3fCGk2BnR_VOcJd1LL;3
+R12
+32
+R65
+R16
+R17
+w1458728427
+R66
+!s108 1458749810.306000
+!s100 hc`P9VIaLn<77P704FZ>o0
+!i10b 1
+Eram
+Z68 w1459794510
+R19
+R7
+R8
+R9
+Z69 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram.vhd
+Z70 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram.vhd
+l0
+L5
+V13c^KMmEWb`zi=nCmI@iM2
+R12
+32
+Z71 !s108 1459871518.191000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram.vhd|
+Z73 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram.vhd|
+R16
+R17
+!s100 _L`Qg]Ni`QLeYNK8M706<2
+!i10b 1
+Adataflow
+R19
+R7
+R8
+DEx4 work 3 ram 0 22 13c^KMmEWb`zi=nCmI@iM2
+32
+l20
+L15
+V6EO6V37z8]L6KjN:P5]LH0
+R12
+R71
+R72
+R73
+R16
+R17
+!s100 bkSCBOmn<9Sabk`;WMcPV0
+!i10b 1
+Eram_cache
+Z74 w1459844040
+R19
+R7
+R8
+R9
+Z75 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache.vhd
+Z76 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache.vhd
+l0
+L5
+VDX^dW1DV`l;Qa`U0Wn>?a3
+R12
+32
+Z77 !s108 1459871518.539000
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache.vhd|
+Z79 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/ram_cache.vhd|
+R16
+R17
+!s100 QDB0ZKPLD=BA9?URkAVoY0
+!i10b 1
+Adata_flow
+R19
+R7
+R8
+DEx4 work 9 ram_cache 0 22 DX^dW1DV`l;Qa`U0Wn>?a3
+32
+l68
+L17
+Vg1MgfZdX4?F:5P<9>FFA71
+R12
+R77
+R78
+R79
+R16
+R17
+!s100 7ehn1b6MghBjZb[C:b9Vi1
+!i10b 1
+Etag_valid_array
+Z80 w1459790696
+R19
+R7
+R8
+R9
+Z81 8D:/courses/University courses/Computer Architecture/Projects/Mid_Term/Tag-Valid_array.vhd
+Z82 FD:/courses/University courses/Computer Architecture/Projects/Mid_Term/Tag-Valid_array.vhd
+l0
+L5
+V]zoOjAE73:>X?H44OzZ941
+R12
+32
+Z83 !s108 1459871518.891000
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|D:/courses/University courses/Computer Architecture/Projects/Mid_Term/Tag-Valid_array.vhd|
+Z85 !s107 D:/courses/University courses/Computer Architecture/Projects/Mid_Term/Tag-Valid_array.vhd|
+R16
+R17
+!s100 bHT7II_L=3;zPNGigIRmP3
+!i10b 1
+Adataflow
+R19
+R7
+R8
+DEx4 work 15 tag_valid_array 0 22 ]zoOjAE73:>X?H44OzZ941
+32
+l26
+L17
+VHI8MCmK837J>7>=am93l43
+R12
+R83
+R84
+R85
+R16
+R17
+!s100 _Izg=T<laX3YcLOVBz[ZL1
+!i10b 1
