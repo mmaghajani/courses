@@ -91,3 +91,36 @@ rst <= '0',
 clk <= not clk after 50ns;
 
 end lock;
+
+architecture lock_users of TB is
+component lock_users is Port (
+one , zero , enter , rst , clk :in std_logic;
+unlock : out std_logic
+ );
+end component;
+
+signal one , zero , enter , rst , unlock: std_logic;
+signal clk : std_logic := '0' ;
+begin
+
+MODULE: lock_users port map ( one , zero , enter , rst , clk , unlock );
+
+one <= '0' ,
+       '1' after 100ns,
+       '0' after 200ns,
+       '1' after 300ns,
+       '0' after 500ns;
+zero <= '1',
+        '0' after 100ns,
+        '1' after 200ns,
+        '0' after 300ns ;
+enter <= '0',
+         '1' after 500ns,
+         '0' after 600ns;
+rst <= '0',
+       '1' after 1000ns,
+       '0' after 1100ns;
+
+clk <= not clk after 50ns;
+
+end lock_users;
