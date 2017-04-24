@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FieldStats()
+comment0.text=\r\n\ Construct\ a\ FieldStats\ object.\r\n
+comment1.params=field
+comment1.target=java.lang.String\ getPopulationDetails(Field)
+comment1.text=\r\n\ Get\ details\ of\ what\ is\ in\ the\ field.\r\n\ @return\ A\ string\ describing\ what\ is\ in\ the\ field.\r\n
+comment2.params=
+comment2.target=void\ reset()
+comment2.text=\r\n\ Invalidate\ the\ current\ set\ of\ statistics;\ reset\ all\ \r\n\ counts\ to\ zero.\r\n
+comment3.params=animalClass
+comment3.target=void\ incrementCount(java.lang.Class)
+comment3.text=\r\n\ Increment\ the\ count\ for\ one\ class\ of\ animal.\r\n\ @param\ animalClass\ The\ class\ of\ animal\ to\ increment.\r\n
+comment4.params=
+comment4.target=void\ countFinished()
+comment4.text=\r\n\ Indicate\ that\ an\ animal\ count\ has\ been\ completed.\r\n
+comment5.params=field
+comment5.target=boolean\ isViable(Field)
+comment5.text=\r\n\ Determine\ whether\ the\ simulation\ is\ still\ viable.\r\n\ I.e.,\ should\ it\ continue\ to\ run.\r\n\ @return\ true\ If\ there\ is\ more\ than\ one\ species\ alive.\r\n
+comment6.params=field
+comment6.target=void\ generateCounts(Field)
+comment6.text=\r\n\ Generate\ counts\ of\ the\ number\ of\ foxes\ and\ rabbits.\r\n\ These\ are\ not\ kept\ up\ to\ date\ as\ foxes\ and\ rabbits\r\n\ are\ placed\ in\ the\ field,\ but\ only\ when\ a\ request\r\n\ is\ made\ for\ the\ information.\r\n\ @param\ field\ The\ field\ to\ generate\ the\ stats\ for.\r\n
+numComments=7

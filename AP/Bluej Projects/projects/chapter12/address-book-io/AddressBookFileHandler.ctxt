@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=book
+comment0.target=AddressBookFileHandler(AddressBook)
+comment0.text=\nConstructor\ for\ objects\ of\ class\ FileHandler.\n@param\ book\ The\ address\ book\ to\ use.\n\n
+comment1.params=keyPrefix
+comment1.target=void\ saveSearchResults(String)
+comment1.text=\nSave\ the\ results\ of\ an\ address-book\ search\ to\nthe\ file\ "results.txt"\ in\ the\ project\ folder.\n@param\ keyPrefix\ The\ key\ prefix\ to\ search\ on.\n\n
+comment2.target=void\ showSearchResults()
+comment2.text=\nShow\ the\ results\ from\ the\ most-recent\ call\ to\nsaveSearchResults.\ As\ output\ is\ to\ the\ console,\ any\nproblems\ are\ reported\ directly\ by\ this\ method.\n\n
+comment3.params=filename
+comment3.target=void\ addEntriesFromFile(String)
+comment3.text=\nAdd\ further\ entries\ to\ the\ address\ book,\ from\ a\ text\ file.\nThe\ file\ is\ assumed\ to\ contain\ one\ element\ per\ line,\nplus\ a\ blank\ line,\ for\ each\ entry\:\nname\ \\n\ phone\ \\n\ address\ \\n\ \\n\nA\ line\ may\ be\ blank\ if\ that\ part\ of\ the\ details\ is\ missing.\n@param\ filename\ The\ text\ file\ containing\ the\ details.\n@throws\ IOException\ On\ input\ failure.\n\n
+comment4.params=sourceFile
+comment4.target=AddressBook\ readFromFile(String)
+comment4.text=\nRead\ the\ binary\ version\ of\ an\ address\ book\ from\ the\ given\ file.\nIf\ the\ file\ name\ is\ not\ an\ absolute\ path,\ then\ it\ is\ assumed\nto\ be\ relative\ to\ the\ current\ project\ folder.\n@param\ sourceFile\ The\ file\ from\ where\ the\ details\ are\ to\ be\ read.\n@return\ The\ address\ book\ object.\n@throws\ IOException\ If\ the\ reading\ process\ fails\ for\ any\ reason.\n\n
+comment5.params=destinationFile
+comment5.target=void\ saveToFile(String)
+comment5.text=\nSave\ a\ binary\ version\ of\ the\ address\ book\ to\ the\ given\ file.\nIf\ the\ file\ name\ is\ not\ an\ absolute\ path,\ then\ it\ is\ assumed\nto\ be\ relative\ to\ the\ current\ project\ folder.\n@param\ destinationFile\ The\ file\ where\ the\ details\ are\ to\ be\ saved.\n@throws\ IOException\ If\ the\ saving\ process\ fails\ for\ any\ reason.\n\n
+comment6.params=filename
+comment6.target=File\ makeAbsoluteFilename(String)
+comment6.text=\nCreate\ an\ absolute\ file\ from\ the\ given\ file\ name.\nIf\ the\ filename\ is\ an\ absolute\ one\ already,\ then\ use\ it\nunchanged,\ otherwise\ assume\ it\ is\ relative\ to\ the\ncurrent\ project\ folder.\n@throws\ IOException\ If\ a\ valid\ filename\ cannot\ be\ made.\n\n
+comment7.target=File\ getProjectFolder()
+comment7.text=\nTry\ to\ determine\ the\ name\ of\ the\ current\ project\ folder.\nThis\ process\ involves\ locating\ the\ path\ of\ the\ .class\ file\nfor\ this\ class,\ and\ then\ extracting\ the\ name\ of\ the\ folder\ncontaining\ it.\n@throws\ URISyntaxException\ If\ the\ URL\ is\ not\ formatted\ correctly.\n@return\ The\ current\ project\ folder.\n\n
+numComments=8

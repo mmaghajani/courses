@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=height\ width
+comment0.target=SimulatorView(int,\ int)
+comment0.text=\r\n\ Create\ a\ view\ of\ the\ given\ width\ and\ height.\r\n\ @param\ height\ The\ simulation's\ height.\r\n\ @param\ width\ \ The\ simulation's\ width.\r\n
+comment1.params=animalClass\ color
+comment1.target=void\ setColor(java.lang.Class,\ java.awt.Color)
+comment1.text=\r\n\ Define\ a\ color\ to\ be\ used\ for\ a\ given\ class\ of\ animal.\r\n\ @param\ animalClass\ The\ animal's\ Class\ object.\r\n\ @param\ color\ The\ color\ to\ be\ used\ for\ the\ given\ class.\r\n
+comment2.params=animalClass
+comment2.target=java.awt.Color\ getColor(java.lang.Class)
+comment2.text=\r\n\ @return\ The\ color\ to\ be\ used\ for\ a\ given\ class\ of\ animal.\r\n
+comment3.params=step\ field
+comment3.target=void\ showStatus(int,\ Field)
+comment3.text=\r\n\ Show\ the\ current\ status\ of\ the\ field.\r\n\ @param\ step\ Which\ iteration\ step\ it\ is.\r\n\ @param\ field\ The\ field\ whose\ status\ is\ to\ be\ displayed.\r\n
+comment4.params=field
+comment4.target=boolean\ isViable(Field)
+comment4.text=\r\n\ Determine\ whether\ the\ simulation\ should\ continue\ to\ run.\r\n\ @return\ true\ If\ there\ is\ more\ than\ one\ species\ alive.\r\n
+numComments=5

@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Auction()
+comment0.text=\r\n\ Create\ a\ new\ auction.\r\n
+comment1.params=description
+comment1.target=void\ enterLot(java.lang.String)
+comment1.text=\r\n\ Enter\ a\ new\ lot\ into\ the\ auction.\r\n\ @param\ description\ A\ description\ of\ the\ lot.\r\n
+comment2.params=
+comment2.target=void\ showLots()
+comment2.text=\r\n\ Show\ the\ full\ list\ of\ lots\ in\ this\ auction.\r\n
+comment3.params=lotNumber\ bidder\ value
+comment3.target=void\ makeABid(int,\ Person,\ long)
+comment3.text=\r\n\ Make\ a\ bid\ for\ a\ lot.\r\n\ A\ message\ is\ printed\ indicating\ whether\ the\ bid\ is\r\n\ successful\ or\ not.\r\n\ \r\n\ @param\ lotNumber\ The\ lot\ being\ bid\ for.\r\n\ @param\ bidder\ The\ person\ bidding\ for\ the\ lot.\r\n\ @param\ value\ \ The\ value\ of\ the\ bid.\r\n
+comment4.params=lotNumber
+comment4.target=Lot\ getLot(int)
+comment4.text=\r\n\ Return\ the\ lot\ with\ the\ given\ number.\ Return\ null\r\n\ if\ a\ lot\ with\ this\ number\ does\ not\ exist.\r\n\ @param\ lotNumber\ The\ number\ of\ the\ lot\ to\ return.\r\n
+comment5.params=
+comment5.target=void\ printLots()
+comment6.params=
+comment6.target=java.util.ArrayList\ getUnSold()
+comment7.params=number
+comment7.target=Lot\ removeLot(int)
+comment7.text=\r\n\ Remove\ the\ lot\ with\ the\ given\ lot\ number.\r\n\ @param\ number\ The\ number\ of\ the\ lot\ to\ be\ removed.\r\n\ @return\ The\ Lot\ with\ the\ given\ number,\ or\ null\ if\r\n\ there\ is\ no\ such\ lot.\r\n
+numComments=8

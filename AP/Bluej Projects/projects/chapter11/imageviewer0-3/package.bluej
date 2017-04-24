@@ -1,0 +1,26 @@
+#BlueJ package file
+package.editor.height=369
+package.editor.width=571
+package.editor.x=6
+package.editor.y=77
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=UTF-8
+readme.editor.height=534
+readme.editor.width=776
+readme.editor.x=0
+readme.editor.y=22
+target1.editor.height=736
+target1.editor.width=938
+target1.editor.x=17
+target1.editor.y=38
+target1.height=60
+target1.name=ImageViewer
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=120
+target1.x=210
+target1.y=130

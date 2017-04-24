@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=from\ to\ message\ subject
+comment0.target=MailItem(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Create\ a\ mail\ item\ from\ sender\ to\ the\ given\ recipient,\r\n\ containing\ the\ given\ message.\r\n\ @param\ from\ The\ sender\ of\ this\ item.\r\n\ @param\ to\ The\ intended\ recipient\ of\ this\ item.\r\n\ @param\ message\ The\ text\ of\ the\ message\ to\ be\ sent.\r\n
+comment1.params=
+comment1.target=java.lang.String\ getFrom()
+comment1.text=\r\n\ @return\ The\ sender\ of\ this\ message.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getTo()
+comment2.text=\r\n\ @return\ The\ intended\ recipient\ of\ this\ message.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getMessage()
+comment3.text=\r\n\ @return\ The\ text\ of\ the\ message.\r\n
+comment4.params=
+comment4.target=java.lang.String\ getSubject()
+comment5.params=
+comment5.target=void\ print()
+comment5.text=\r\n\ Print\ this\ mail\ message\ to\ the\ text\ terminal.\r\n
+numComments=6

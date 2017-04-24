@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LogAnalyzer()
+comment0.text=\r\n\ Create\ an\ object\ to\ analyze\ hourly\ web\ accesses.\r\n
+comment1.params=filename
+comment1.target=void\ analyzeHourlyData(java.lang.String)
+comment1.text=\r\n\ Analyze\ the\ hourly\ access\ data\ from\ a\ log\ file.\r\n\ @param\ filename\ The\ name\ of\ the\ log\ file.\r\n
+comment2.params=
+comment2.target=void\ printHourlyCounts()
+comment2.text=\r\n\ Print\ the\ hourly\ counts.\r\n\ These\ should\ have\ been\ set\ with\ a\ prior\r\n\ call\ to\ analyzeHourlyData.\r\n
+comment3.params=
+comment3.target=void\ printData()
+comment3.text=\r\n\ Print\ the\ lines\ of\ data\ read\ by\ the\ LogfileReader\r\n
+comment4.params=
+comment4.target=void\ reset()
+comment4.text=\r\n\ Reset\ the\ analyzer\ to\ the\ state\ of\ having\ no\ data.\r\n
+numComments=5

@@ -1,0 +1,14 @@
+new Thread(){
+    		public void run() {
+    			while ( true )
+    			{
+    				GamePanel.this.repaint();
+    				try {
+						Thread.sleep(20);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+    			}
+    		};
+    	}.start();

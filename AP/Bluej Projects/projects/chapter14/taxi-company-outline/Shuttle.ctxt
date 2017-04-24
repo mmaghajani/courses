@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=class\ Shuttle
+comment0.text=\nA\ shuttle\ is\ able\ to\ carry\ multiple\ passengers.\n\n@author\ David\ J.\ Barnes\ and\ Michael\ Kolling\n@version\ 2006.03.30\n\n
+comment1.target=destinations
+comment2.target=passengers
+comment3.params=
+comment3.target=void\ offloadPassenger()
+comment3.text=\nOffload\ a\ passenger\ whose\ destination\ is\ the\ncurrent\ location.\n\n
+comment4.params=passenger
+comment4.target=void\ pickup(Passenger)
+comment4.text=\nReceive\ a\ passenger.\nAdd\ their\ destination\ to\ the\ list.\n@param\ passenger\ The\ passenger\ being\ picked\ up.\n\n
+comment5.params=company\ location
+comment5.target=Shuttle(TaxiCompany,Location)
+comment5.text=\nConstructor\ for\ objects\ of\ class\ Shuttle\n@param\ company\ The\ taxi\ company.\ Must\ not\ be\ null.\n@param\ location\ The\ vehicle's\ starting\ point.\ Must\ not\ be\ null.\n@throws\ NullPointerException\ If\ company\ or\ location\ is\ null.\n\n
+comment6.params=
+comment6.target=void\ chooseTargetLocation()
+comment6.text=\nDecide\ where\ to\ go\ next,\ based\ on\ the\ list\ of\npossible\ destinations.\n\n
+comment7.params=location
+comment7.target=void\ setPickupLocation(Location)
+comment7.text=\nReceive\ a\ pickup\ location.\n@param\ location\ The\ pickup\ location.\n\n
+comment8.params=
+comment8.target=boolean\ isFree()
+comment8.text=\n@return\ Whether\ or\ not\ this\ vehicle\ is\ free.\n\n
+numComments=9

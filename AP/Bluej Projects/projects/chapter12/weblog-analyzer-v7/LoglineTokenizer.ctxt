@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LoglineTokenizer()
+comment0.text=\r\n\ Construct\ a\ LogLineAnalyzer\r\n
+comment1.params=logline\ dataLine
+comment1.target=void\ tokenize(java.lang.String,\ int[])
+comment1.text=\r\n\ Tokenize\ a\ log\ line.\ Place\ the\ integer\ values\ from\r\n\ it\ into\ an\ array.\ The\ number\ of\ tokens\ on\ the\ line\r\n\ must\ be\ sufficient\ to\ fill\ the\ array.\r\n\r\n\ @param\ logline\ The\ line\ to\ be\ tokenized.\r\n\ @param\ dataLine\ Where\ to\ store\ the\ values.\r\n
+numComments=2

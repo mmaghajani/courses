@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=width\ height\ startMax
+comment0.target=GraphView(int,\ int,\ int)
+comment0.text=\r\n\ Constructor.\r\n\ \r\n\ @param\ width\ The\ width\ of\ the\ plotter\ window\ (in\ pixles).\r\n\ @param\ height\ The\ height\ of\ the\ plotter\ window\ (in\ pixles).\r\n\ @param\ startMax\ The\ initial\ maximum\ value\ for\ the\ y\ axis.\r\n\ @param\ world\ The\ world\ object.\r\n\ @param\ class1\ The\ first\ class\ to\ be\ plotted.\r\n\ @param\ width\ The\ second\ class\ to\ be\ plotted.\r\n
+comment1.params=animalClass\ color
+comment1.target=void\ setColor(java.lang.Class,\ java.awt.Color)
+comment1.text=\r\n\ Define\ a\ color\ to\ be\ used\ for\ a\ given\ class\ of\ animal.\r\n\ @param\ animalClass\ The\ animal's\ Class\ object.\r\n\ @param\ color\ The\ color\ to\ be\ used\ for\ the\ given\ class.\r\n
+comment2.params=step\ field
+comment2.target=void\ showStatus(int,\ Field)
+comment2.text=\r\n\ Show\ the\ current\ status\ of\ the\ field.\ The\ status\ is\ shown\ by\ displaying\ a\ line\ graph\ for\r\n\ two\ classes\ in\ the\ field.\ This\ view\ currently\ does\ not\ work\ for\ more\ (or\ fewer)\ than\ exactly\r\n\ two\ classes.\ If\ the\ field\ contains\ more\ than\ two\ different\ types\ of\ animal,\ only\ two\ of\ the\ classes\r\n\ will\ be\ plotted.\r\n\ \r\n\ @param\ step\ Which\ iteration\ step\ it\ is.\r\n\ @param\ field\ The\ field\ whose\ status\ is\ to\ be\ displayed.\r\n
+comment3.params=field
+comment3.target=boolean\ isViable(Field)
+comment3.text=\r\n\ Determine\ whether\ the\ simulation\ should\ continue\ to\ run.\r\n\ @return\ true\ If\ there\ is\ more\ than\ one\ species\ alive.\r\n
+comment4.params=
+comment4.target=void\ reset()
+comment4.text=\r\n\ Prepare\ for\ a\ new\ run.\r\n
+comment5.params=width\ height\ startMax
+comment5.target=javax.swing.JFrame\ makeFrame(int,\ int,\ int)
+comment5.text=\r\n\ Prepare\ the\ frame\ for\ the\ graph\ display.\r\n
+numComments=6

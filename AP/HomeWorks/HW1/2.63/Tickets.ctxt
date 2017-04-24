@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=price1\ price2\ price3
+comment0.target=Tickets(int,\ int,\ int)
+numComments=1

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=LogfileCreator()
+comment0.text=\r\n\ Create\ log\ files.\r\n
+comment1.params=filename\ numEntries
+comment1.target=boolean\ createFile(java.lang.String,\ int)
+comment1.text=\r\n\ Create\ a\ file\ of\ random\ log\ entries.\r\n\ @param\ filename\ The\ file\ to\ write.\r\n\ @param\ numEntries\ How\ many\ entries.\r\n\ @return\ true\ if\ successful,\ false\ otherwise.\r\n
+comment2.params=
+comment2.target=LogEntry\ createEntry()
+comment2.text=\r\n\ Create\ a\ \r\n
+numComments=3

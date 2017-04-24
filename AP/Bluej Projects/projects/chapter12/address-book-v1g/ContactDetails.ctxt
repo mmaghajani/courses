@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=name\ phone\ address
+comment0.target=ContactDetails(String,\ String,\ String)
+comment0.text=\nSet\ up\ the\ contact\ details.\ All\ details\ are\ trimmed\ to\ remove\ntrailing\ white\ space.\n@param\ name\ The\ name.\n@param\ phone\ The\ phone\ number.\n@param\ address\ The\ address.\n\n
+comment1.target=String\ getName()
+comment1.text=\n@return\ The\ name.\n\n
+comment2.target=String\ getPhone()
+comment2.text=\n@return\ The\ telephone\ number.\n\n
+comment3.target=String\ getAddress()
+comment3.text=\n@return\ The\ address.\n\n
+comment4.params=other
+comment4.target=boolean\ equals(Object)
+comment4.text=\nTest\ for\ content\ equality\ between\ two\ objects.\n@param\ other\ The\ object\ to\ compare\ to\ this\ one.\n@return\ true\ if\ the\ argument\ object\ is\ a\ set\nof\ contact\ details\ with\ matching\ attributes.\n\n
+comment5.params=otherDetails
+comment5.target=int\ compareTo(ContactDetails)
+comment5.text=\nCompare\ these\ details\ against\ another\ set,\ for\ the\ purpose\nof\ sorting.\ The\ fields\ are\ sorted\ by\ name,\ phone,\ and\ address.\n@param\ otherDetails\ The\ details\ to\ be\ compared\ against.\n@return\ a\ negative\ integer\ if\ this\ comes\ before\ the\ parameter,\nzero\ if\ they\ are\ equal\ and\ a\ positive\ integer\ if\ this\ncomes\ after\ the\ second.\n\n
+comment6.target=String\ toString()
+comment6.text=\n@return\ A\ multi-line\ string\ containing\ the\ name,\ phone,\ and\ address.\n\n
+comment7.target=int\ hashCode()
+comment7.text=\nCompute\ a\ hashcode\ using\ the\ rules\ to\ be\ found\ in\n"Effective\ Java",\ by\ Joshua\ Bloch.\n@return\ A\ hashcode\ for\ ContactDetails.\n\n
+numComments=8

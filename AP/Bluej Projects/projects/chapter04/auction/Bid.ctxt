@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=bidder\ value
+comment0.target=Bid(Person,\ long)
+comment0.text=\r\n\ Create\ a\ bid.\r\n\ @param\ bidder\ Who\ is\ bidding\ for\ the\ lot.\r\n\ @param\ value\ The\ value\ of\ the\ bid.\r\n
+comment1.params=
+comment1.target=Person\ getBidder()
+comment1.text=\r\n\ @return\ The\ bidder.\r\n
+comment2.params=
+comment2.target=long\ getValue()
+comment2.text=\r\n\ @return\ The\ value\ of\ the\ bid.\r\n
+numComments=3

@@ -1,0 +1,26 @@
+#BlueJ package file
+package.editor.height=379
+package.editor.width=649
+package.editor.x=78
+package.editor.y=75
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=UTF-8
+readme.editor.height=649
+readme.editor.width=817
+readme.editor.x=0
+readme.editor.y=22
+target1.editor.height=738
+target1.editor.width=890
+target1.editor.x=70
+target1.editor.y=22
+target1.height=60
+target1.name=MusicOrganizer
+target1.naviview.expanded=true
+target1.showInterface=false
+target1.type=ClassTarget
+target1.width=120
+target1.x=180
+target1.y=110

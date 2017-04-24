@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Randomizer()
+comment0.text=\nConstructor\ for\ objects\ of\ class\ Randomizer\n\n
+comment1.target=Random\ getRandom()
+comment1.text=\nProvide\ a\ random\ generator.\n@return\ A\ random\ object.\n\n
+comment2.target=void\ reset()
+comment2.text=\nReset\ the\ randomization.\nThis\ will\ have\ no\ effect\ if\ randomization\ is\ not\ through\na\ shared\ Random\ generator.\n\n
+numComments=3

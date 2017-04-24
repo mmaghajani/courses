@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=class\ Demo
+comment0.text=\nSet\ up\ a\ passenger-source\ and\ taxi-company,\ to\ illustrate\nthe\ scenario\ of\ requesting\ a\ pickup.\n\n@author\ David\ J.\ Barnes\ and\ Michael\ Kolling\n@version\ 2006.03.30\n\n
+comment1.target=company
+comment2.params=
+comment2.target=void\ pickupTest()
+comment2.text=\nRequest\ a\ pickup\ for\ a\ new\ passenger.\nThe\ request\ will\ fail\ in\ this\ version.\n\n
+comment3.params=
+comment3.target=Demo()
+comment3.text=\nCreate\ some\ sample\ objects\ for\ the\ demo.\n\n
+comment4.target=source
+numComments=5

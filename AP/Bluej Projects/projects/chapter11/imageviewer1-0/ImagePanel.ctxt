@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ImagePanel()
+comment0.text=\nCreate\ a\ new,\ empty\ ImagePanel.\n\n
+comment1.params=image
+comment1.target=void\ setImage(OFImage)
+comment1.text=\nSet\ the\ image\ that\ this\ panel\ should\ show.\n\n@param\ image\ \ The\ image\ to\ be\ displayed.\n\n
+comment2.target=void\ clearImage()
+comment2.text=\nClear\ the\ image\ on\ this\ panel.\n\n
+comment3.target=Dimension\ getPreferredSize()
+comment3.text=\nTell\ the\ layout\ manager\ how\ big\ we\ would\ like\ to\ be.\n(This\ method\ gets\ called\ by\ layout\ managers\ for\ placing\nthe\ components.)\n\n@return\ The\ preferred\ dimension\ for\ this\ component.\n\n
+comment4.params=g
+comment4.target=void\ paintComponent(Graphics)
+comment4.text=\nThis\ component\ needs\ to\ be\ redisplayed.\ Copy\ the\ internal\ image\ \nto\ screen.\ (This\ method\ gets\ called\ by\ the\ Swing\ screen\ painter\ \nevery\ time\ it\ want\ this\ component\ displayed.)\n\n@param\ g\ The\ graphics\ context\ that\ can\ be\ used\ to\ draw\ on\ this\ component.\n\n
+numComments=5

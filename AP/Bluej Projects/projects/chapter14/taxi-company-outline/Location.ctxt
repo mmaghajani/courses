@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=class\ Location
+comment0.text=\nModel\ a\ location\ in\ a\ city.\n\n@author\ David\ J.\ Barnes\ and\ Michael\ Kolling\n@version\ 2006.03.30\n\n
+comment1.params=
+comment1.target=Location()
+comment1.text=\nConstructor\ for\ objects\ of\ class\ Location\n\n
+numComments=2

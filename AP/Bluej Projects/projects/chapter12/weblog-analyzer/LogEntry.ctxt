@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=logline
+comment0.target=LogEntry(java.lang.String)
+comment0.text=\r\n\ Decompose\ a\ log\ line\ so\ that\ the\ individual\ fields\r\n\ are\ available.\r\n\ @param\ logline\ A\ single\ line\ from\ the\ log.\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ This\ should\ be\ in\ the\ format\:\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ year\ month\ day\ hour\ minute\ etc.\r\n
+comment1.params=year\ month\ day\ hour\ minute
+comment1.target=LogEntry(int,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Create\ a\ LogEntry\ from\ the\ individual\ components.\r\n\ @param\ year\ The\ year\r\n\ @param\ month\ The\ month\ (1-12)\r\n\ @param\ day\ The\ day\ (1-31)\r\n\ @param\ hour\ The\ hour\ (0-23)\r\n\ @param\ minute\ The\ minute\ (0-59)\r\n
+comment2.params=
+comment2.target=int\ getHour()
+comment2.text=\r\n\ Return\ the\ hour.\r\n\ @return\ The\ hour\ field\ from\ the\ log\ line.\r\n
+comment3.params=
+comment3.target=int\ getMinute()
+comment3.text=\r\n\ Return\ the\ minute.\r\n\ @return\ The\ minute\ field\ from\ the\ log\ line.\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ Create\ a\ string\ representation\ of\ the\ data.\r\n\ This\ is\ not\ necessarily\ identical\ with\ the\r\n\ text\ of\ the\ original\ log\ line.\r\n\ @return\ A\ string\ representing\ the\ data\ of\ this\ entry.\r\n
+comment5.params=otherEntry
+comment5.target=int\ compareTo(LogEntry)
+comment5.text=\r\n\ Compare\ the\ date/time\ combination\ of\ this\ log\ entry\r\n\ with\ another.\r\n\ @param\ otherEntry\ The\ other\ entry\ to\ compare\ against.\r\n\ @return\ A\ negative\ value\ if\ this\ entry\ comes\ before\ the\ other.\r\n\ \ \ \ \ \ \ \ \ A\ positive\ value\ if\ this\ entry\ comes\ after\ the\ other.\r\n\ \ \ \ \ \ \ \ \ Zero\ if\ the\ entries\ are\ the\ same.\r\n
+comment6.params=
+comment6.target=java.util.Calendar\ getWhen()
+comment6.text=\r\n\ Return\ the\ Calendar\ object\ representing\ this\ event.\r\n\ @return\ The\ Calendar\ for\ this\ event.\r\n
+comment7.params=
+comment7.target=void\ setWhen()
+comment7.text=\r\n\ Create\ an\ equivalent\ Calendar\ object\ from\ the\ data\ values.\r\n
+numComments=8

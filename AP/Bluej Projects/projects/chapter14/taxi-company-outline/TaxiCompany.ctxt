@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=class\ TaxiCompany
+comment0.text=\nModel\ the\ operation\ of\ a\ taxi\ company,\ operating\ different\ntypes\ of\ vehicle.\n\n@author\ David\ J.\ Barnes\ and\ Michael\ Kolling\n@version\ 2006.03.30\n\n
+comment1.params=vehicle
+comment1.target=void\ arrivedAtPickup(Vehicle)
+comment1.text=\nA\ vehicle\ has\ arrived\ at\ a\ pickup\ point.\n@param\ vehicle\ The\ vehicle\ at\ the\ pickup\ point.\n\n
+comment2.params=passenger
+comment2.target=boolean\ requestPickup(Passenger)
+comment2.text=\nRequest\ a\ pickup\ for\ the\ given\ passenger.\n@param\ passenger\ The\ passenger\ requesting\ a\ pickup.\n@return\ Whether\ a\ free\ vehicle\ is\ available.\n\n
+comment3.target=vehicles
+comment4.params=vehicle\ passenger
+comment4.target=void\ arrivedAtDestination(Vehicle,Passenger)
+comment4.text=\nA\ vehicle\ has\ arrived\ at\ a\ passenger's\ destination.\n@param\ vehicle\ The\ vehicle\ at\ the\ destination.\n@param\ passenger\ The\ passenger\ being\ dropped\ off.\n\n
+comment5.params=
+comment5.target=TaxiCompany()
+comment5.text=\nConstructor\ for\ objects\ of\ class\ TaxiCompany\n\n
+comment6.params=
+comment6.target=Vehicle\ scheduleVehicle()
+comment6.text=\nFind\ a\ free\ vehicle,\ if\ any.\n@return\ A\ free\ vehicle,\ or\ null\ if\ there\ is\ none.\n\n
+numComments=7

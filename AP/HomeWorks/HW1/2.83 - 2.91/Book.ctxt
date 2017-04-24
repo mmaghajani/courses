@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=bookAuthor\ bookTitle\ pageNum
+comment0.target=Book(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\r\n\ Set\ the\ author\ and\ title\ fields\ when\ this\ object\r\n\ is\ constructed.\r\n
+comment1.params=
+comment1.target=java.lang.String\ getAuthor()
+comment2.params=
+comment2.target=java.lang.String\ getTitle()
+comment3.params=
+comment3.target=int\ getPages()
+comment4.params=
+comment4.target=void\ printAuthor()
+comment5.params=
+comment5.target=void\ printTitle()
+comment6.params=
+comment6.target=void\ prinDdetails()
+comment7.params=refNumber
+comment7.target=void\ setRefNumber(java.lang.String)
+comment8.params=
+comment8.target=java.lang.String\ getRefNumber()
+numComments=9
