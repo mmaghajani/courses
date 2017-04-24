@@ -1,0 +1,10 @@
+syms t k
+T = 4;
+w0 = 2*pi/T;
+
+ak = (2/T)*(int(cos(k*w0*t),t,0,1/2) + int((2*t-4)*cos(k*w0*t),t,2,5/2) + int((-2*t+6)*cos(k*w0*t),t,5/2,3));
+a0 = (2/T)*(int(1,t,0,1/2) + int((2*t-4),t,2,5/2) + int((-2*t+6),t,5/2,3));
+bk = (2/T)*(int(sin(k*w0*t),t,0,1/2) + int((2*t-4)*sin(k*w0*t),t,2,5/2) + int((-2*t+6)*sin(k*w0*t),t,5/2,3));
+fk = ak.* cos(k*w0*t) + bk.*sin(k*w0*t);
+ft = a0 + symsum(fk , k , -100 , -1 ) + symsum(fk , k , 1 , 100 );
+fplot(ft , [-3.5 3.5]);

@@ -1,0 +1,12 @@
+t = linspace(-1,10);
+unitstep = t >= 0;
+x = 3 .* exp( -2 .* t ) .* unitstep;
+plot(t , x);
+x = sin(2.*t) + 2 .* cos(3 .* t - 0.2);
+plot(t , x);
+x = exp(-2 .* t) .* sin(3 .* t) .* unitstep;
+plot(t,x);
+unitstep2 = t >= 2;
+unitstep4 = t >= 4;
+x = exp(-t) .* unitstep + exp(-t) .* ( exp(2.*t -4)-1) .* unitstep2 - exp(t-4) .* unitstep4;
+plot(t,x);

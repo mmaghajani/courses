@@ -1,0 +1,8 @@
+>> n = [-10:10];
+>> unitstep = heaviside(n);
+>> unitstep1 = heaviside(n-1);
+>> x = unitstep - unitstep1;
+>> h = x ;
+>> w = conv(x,h);
+>> n = [1:41];
+>> plot(n , w , 'bo');

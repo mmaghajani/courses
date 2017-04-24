@@ -1,0 +1,10 @@
+n = [-10:10];
+x = (0.7.^n).*(sin(n.*pi/4)-cos(n.*pi/4));
+plot(n,x);
+x = cos(pi.*(n.^2)/3);
+plot(n,x);
+unitstep2 = n >= 2;
+unitstepnot2 = n <= -2;
+unitstepnot1 = n <= 1;
+x = 3 .* unitstep2  + 2 .* unitstepnot2 + (1- exp(0.2.*n)).*unitstepnot1;
+plot(n,x);

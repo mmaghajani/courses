@@ -1,0 +1,9 @@
+n = [-5:15];
+x1 = sin( pi/8 .* n);
+x2 = sin( pi/4 .* n);
+x3 = sin( pi/2 .* n);
+x4 = sin( pi .* n);
+x5 = sin( 5.*pi/4.*n);
+x6 = sin( 3.*pi/2.*n);
+x7 = sin( 2.*pi);
+plot(n , x1 , n , x2 , n , x3 , n , x4 , n , x5 , n , x6 , n , x7);

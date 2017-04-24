@@ -1,0 +1,7 @@
+>> x = unit_2 .* 0 + unit_1 .* 0 + unit0 .* 0 + unit1 .* 0 + unit2 .* 0 + unit3 .* 1 + unit4 .* 2 + unit5 .* 3 + unit6 .* 0 + unit7 .* 0 + unit8 .* 5 + unit9 .* 0 + unit10 .* 0 + unit11 .* 0 + unit12 .* 0;
+>> h1 = unit_2 .* 0 + unit_1 .* 0 + unit0 .* 0 + unit1 .* 0 + unit2 .* 0 + unit3 .* 0 + unit4 .* 1 + unit5 .* 2 + unit6 .* 3 + unit7 .* -2 + unit8 .* 0 + unit9 .* 0 + unit10 .* 0 + unit11 .* 0 + unit12 .* 0;
+>> h2 = unit_2 .* 0 + unit_1 .* 0 + unit0 .* 0 + unit1 .* 1 + unit2 .* 2 + unit3 .* 3 + unit4 .* 0 + unit5 .* 0 + unit6 .* 5 + unit7 .* 0 + unit8 .* 0 + unit9 .* 0 + unit10 .* 0 + unit11 .* 0 + unit12 .* 0;
+>> ht = conv(h1,h2);
+>> w = conv(x , ht);
+>> n = [1:43];
+>> plot(n,w,'bo');

@@ -1,0 +1,3 @@
+t = linspace(-0.4,0.4,100);
+x = (sin(pi*t)./(pi*t))./(cos(pi*t*0.5)./(1-t.^2))
+plot(t,x,'r');
