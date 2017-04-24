@@ -1,0 +1,12 @@
+DFA#
+a,b#
+3#
+Q0#
+Q0,Q2#
+Q0;a,b;Q1,Q0/
+Q1;a,b;Q2,Q1/
+Q2;a,b;Q0,Q2#
+bbbababbba/
+ab/
+aabbaabb/
+aaaaaaaaaaaa#
