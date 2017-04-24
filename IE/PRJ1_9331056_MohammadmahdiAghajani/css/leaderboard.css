@@ -1,0 +1,396 @@
+/* 	css rules for leaderboard.html page
+	author: 1111111;
+	date: dd-mm-yy;
+	version: 0.1;
+*/
+.level-18md{
+	float: right;
+	position: relative;
+	top: 59px;
+	right: 25px;
+	color: #fefefe;
+	z-index: 2;
+	font-size: 18px;
+}
+
+.level-16md{
+	float: right;
+	position: relative;
+	top: 55px;
+	right: 35px;
+	color: #fefefe;
+	z-index: 2;
+	font-size: 15px;
+}
+
+.level-14md{
+	float: right;
+	position: relative;
+	top: 30px;
+	right: 25px;
+	color: #fefefe;
+	z-index: 2;
+	font-size: 14px;
+}
+
+#title {
+	text-align: center;
+	color: #444444;
+	display: block;
+	font-size: 25px;
+	font-weight: bold;
+	margin: auto;
+	font-family: Shabnam;
+}
+
+#board {
+	alignment: center;
+	background: #f6f7f9;
+	text-align: center;
+	width: 560px;
+	min-height: 750px;
+	/*margin-top: 25px;*/
+	padding: 10px 0px 10px 0px;
+	margin: auto;
+	border-radius: 2px;
+	box-shadow: 0px 5px 10px #4f5051;
+}
+
+#best{
+	min-height: 200px;
+	align-self: center;
+}
+
+#person1{
+	float: left;
+	padding: 5px;
+	text-align: center;
+	min-height: inherit;
+	/*background: #2aa1c0;*/
+	width: 31%;
+	margin: 50px 4px 4px 4px;
+}
+
+#person2{
+	/*//background: #ffff00;*/
+	text-align: center;
+	width: 31%;
+	min-height: inherit;
+	float: left;
+	margin: 4px;
+}
+
+#person3{
+	/*//background: #c6134f;*/
+	text-align: center;
+	width: 31%;
+	float: left;
+	min-height: inherit;
+	margin: 50px 4px 4px 4px;
+}
+
+.rate{
+	text-align: center;
+	color: #3c3d3c;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.silver-border{
+	border-radius: 50%;
+	align-content: center;
+	text-align: center;
+	align-self: center;
+	margin-left: 25px;
+	width: 85px;
+	height: 85px;
+	padding: 3px;;
+	background: #a0a0a0;
+}
+
+.name{
+	font-size: 21px;
+}
+
+.score{
+	font-size: 20px;
+	color: #26a008;
+	margin-bottom: 0px;
+	border: 0px;
+	padding: 0px;
+	margin-top: -10px;
+}
+
+#rate{
+	color: #3c3d3c;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+#name{
+	font-size: 24px;
+}
+
+#score{
+	font-size: 24px;
+	color: #26a008;
+	margin-top: -10px;
+}
+
+.gold_star{
+	color: #efcb17;
+}
+
+.light_gray_star{
+	color: #b4b4b4;
+}
+
+/*#image{*/
+	/*border-radius: 50%;*/
+	/*align-content: center;*/
+	/*text-align: center;*/
+	/*align-self: center;*/
+	/*margin-left: 0px;*/
+	/*width: 125px;*/
+	/*height: 125px;*/
+	/*background: #c1c1bf;*/
+	/*border: 5px #c6134f;*/
+/*}*/
+
+.gold_border{
+	padding: 3px;
+	border: 5px #c6134f;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	align-content: center;
+	text-align: center;
+	align-self: center;
+	margin-left: 19px;
+	margin-right: -20px;
+	background: #f9a718;
+}
+
+.bronze-border{
+	padding: 3px;
+	border: 5px #c6134f;
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	align-content: center;
+	text-align: center;
+	align-self: center;
+	margin-left: 5px;
+	margin-right: -22px;
+	background: #A92B0C;
+}
+
+.stars{
+	border : 0px;
+	margin-top: 0px;
+	/*margin-top: -15px ;*/
+}
+
+#stars{
+	border : 0px;
+	margin-top: 0px;
+	margin-top: -15px ;
+}
+
+#line{
+	display: block;
+
+}
+
+.list-item{
+	width:91%;
+	height:auto;
+	text-align: center;
+	display: inline-block;
+	margin: auto;
+	padding: 0px 25px 0px 25px;
+
+}
+
+.list-item:hover{
+	background: #d2d2d2;
+}
+
+.rank-list{
+	float: right;
+	text-align: right;
+	font-size: 20px;
+	height: auto;
+	margin-top: 22px;
+}
+
+.list{
+	list-style: none ;
+}
+
+.personal-image{
+	float: right;
+	margin-top: 10px;
+	/*margin-right: -24px;*/
+}
+
+.information{
+	float: right;
+	text-align: right;
+	padding: 2px 10px 0px 0px;;
+}
+
+.stars-block{
+	float: left;
+	margin-top: 30px;
+}
+
+.item{
+	display: block;
+}
+
+.list-image{
+	padding: 0px;
+	border: 5px #c6134f;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	align-content: center;
+	text-align: center;
+	align-self: center;
+	margin-left: 5px;
+	background: #f9a718;
+}
+
+.name-list {
+	font-size: 24px;
+}
+
+.score-list{
+
+}
+.hexagon-40 {
+	position: relative;
+	width: 35px;
+	height: 20.21px;
+	background-color: #343134;
+	margin: 10.10px 0;
+	border-left: solid 2px #fcf0f0;
+	border-right: solid 2px #fcf0f0;
+}
+
+.hexagon-40:before,
+.hexagon-40:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 24.75px;
+	height: 24.75px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 3.1256px;
+}
+
+.hexagon-40:before {
+	top: -12.3744px;
+	border-top: solid 2.8284px #fcf0f0;
+	border-right: solid 2.8284px #fcf0f0;
+}
+
+.hexagon-40:after {
+	bottom: -12.3744px;
+	border-bottom: solid 2.8284px #fcf0f0;
+	border-left: solid 2.8284px #fcf0f0;
+}
+
+.hexagon {
+	position: relative;
+	width: 33px;
+	height: 19.05px;
+	background-color: #343134;
+	margin: 9.53px 0;
+	border-left: solid 2px #fcf0f0;
+	border-right: solid 2px #fcf0f0;
+}
+
+.hexagon:before,
+.hexagon:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 23.33px;
+	height: 23.33px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 2.8327px;
+}
+
+.hexagon:before {
+	top: -11.6673px;
+	border-top: solid 2.8284px #fcf0f0;
+	border-right: solid 2.8284px #fcf0f0;
+}
+
+.hexagon:after {
+	bottom: -11.6673px;
+	border-bottom: solid 2.8284px #fcf0f0;
+	border-left: solid 2.8284px #fcf0f0;
+}
+
+.hexagon-45 {
+	position: relative;
+	width: 42px;
+	height: 24.25px;
+	background-color: #343134;
+	margin: 12.12px 0;
+	border-left: solid 2px #fcf0f0;
+	border-right: solid 2px #fcf0f0;
+}
+
+.hexagon-45:before,
+.hexagon-45:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 29.70px;
+	height: 29.70px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 4.1508px;
+}
+
+.hexagon-45:before {
+	top: -14.8492px;
+	border-top: solid 2.8284px #fcf0f0;
+	border-right: solid 2.8284px #fcf0f0;
+}
+
+.hexagon-45:after {
+	bottom: -14.8492px;
+	border-bottom: solid 2.8284px #fcf0f0;
+	border-left: solid 2.8284px #fcf0f0;
+}
+
+.progress-bar{
+	text-align: center;
+	background: #9e9e9e;
+	border-radius: 50%;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+}
+
+
+
+
+
+
+
+
+

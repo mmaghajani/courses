@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8 />
+<title>Video events</title>
+</head>
+<body>
+	<video controls height="300" width="400">
+	    <source src="video.webm" type="video/webm" />
+	    Your browser doesn't support video.
+	</video>
+
+	<ol id="debug"></ol>
+
+<script>
+var video = document.getElementsByTagName('video')[0];
+var events = 'loadstart progress suspend abort error emptied stalled play pause loadedmetadata loadeddata waiting playing canplay canplaythrough seeking seeked ended ratechange durationchange volumechange'.split(' ');
+var i = events.length;
+var debug = document.getElementById('debug');
+
+while (i--) {
+  video.addEventListener(events[i], echo);
+}
+
+function echo(event) {
+  debug.innerHTML += '<li>' + event.type + '</li>';
+}
+</script>
+</body>
+</html>

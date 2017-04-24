@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/*
+    Edit Me If needed
+*/
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:700";
+
+@font-face {
+    font-family: 'Segment7Standard';
+    src: url('../assets/Segment7Standard.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    min-height: 100vh;
+    padding: 1px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bbbbbb url('../assets/bliss.jpg') no-repeat fixed center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.window {
+    background: white;
+    position: relative;
+    width: 300px;
+    height: 320px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.window:after {
+    position: absolute;
+    content: '';
+    right: -5px;
+    bottom: -5px;
+    width: 10px;
+    height: 10px;
+    cursor: nwse-resize;
+}
+
+.title-bar {
+    border-radius: 5px 5px 0 0;
+    padding: 2px 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+    background: -webkit-linear-gradient(top, #88bfe8 0%, #70b0e0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #88bfe8 0%, #70b0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.title-bar .btn {
+    align-self: flex-end;
+    justify-self: right;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.top .counter {
+    font-family: 'Segment7Standard';
+    background: black;
+    color: red;
+    padding: 2px 5px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 1% auto;
+    padding: 20px;
+    box-shadow: 1px 1px 5px 0px #888;
+    width: 40%;
+}
+
+.modal-content .field {
+    border: 1px dashed grey;
+}
+
+.grid {
+    order: 3;
+    user-select: none;
+    margin: 20px;
+    font-size: 24px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid span {
+    display: block;
+    position: relative;
+    /*width: 1em;*/
+    height: 1em;
+    background: #c0c0c0;
+    box-sizing: border-box;
+    border: solid #808080;
+    border-width: 0 1px 1px 0;
+    flex: 0 0 11.11111%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.grid span:before {
+    font-size: .9rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #c0c0c0;
+    border: 2px outset #ececec;
+    font-size: .75rem;
+    text-align: center;
+}
+
+.grid span.flag:after, .grid span[data-flag='true']:after  {
+    content: '🏁';
+}
+
+.grid span.active:after {
+    background: #bdbdbd;
+    border: solid #999;
+    border-width: 2px 0 0 2px;
+}
+
+.grid span.revealed:after {
+    display: none;
+}
+
+.grid span.revealed[data-value='1']:before {
+    content: '1';
+    color: #0000ff;
+}
+
+.grid span.revealed[data-value='2']:before {
+    content: '2';
+    color: #008100;
+}
+
+.grid span.revealed[data-value='3']:before {
+    content: '3';
+    color: #ff1300;
+}
+
+.grid span.revealed[data-value='4']:before {
+    content: '4';
+    color: #000083;
+}
+
+.grid span.revealed[data-value='5']:before {
+    content: '5';
+    color: #810500;
+}
+
+.grid span.revealed[data-value='6']:before {
+    content: '6';
+    color: #2a9494;
+}
+
+.grid span.revealed[data-value='7']:before {
+    content: '7';
+    color: #000000;
+}
+
+.grid span.revealed[data-value='8']:before {
+    content: '8';
+    color: #808080;
+}
+
+.grid span.revealed[data-value='mine']:before {
+    content: '💣';
+    font-size: .75rem;
+}
+
+.smile:after {
+    content: '😶';
+    display: inline-block;
+}
+
+.smile[data-value='normal']:after {
+    content: '🤔';
+}
+
+.smile[data-value='hover']:after {
+    content: '😮';
+}
+
+.smile[data-value='ok']:after {
+    content: '😌';
+}
+
+.smile[data-value='win']:after {
+    content: '😁';
+}

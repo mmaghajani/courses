@@ -1,0 +1,133 @@
+/* 	css rules for login.html page
+	author: 1111111;
+	date: dd-mm-yy;
+	version: 0.1;
+*/
+html,body{
+    background: #3f6aaf;
+}
+
+#form {
+    alignment: center;
+    background: #eaebed;
+    width: 450px;
+    height: 568px;
+    margin:auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #4f5051;
+}
+
+#form_footer {
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 50px;
+    padding-top: 25px;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    background: #cccccc;
+    color: #222222;
+    font-size: 20px;
+    font-family: Shabnam;
+}
+
+#form_footer a {
+    font-family: Shabnam;
+}
+
+#form_footer a:link {
+    color: #3a82a3;
+}
+
+a:link{
+    color: #750a58;
+}
+
+#title {
+    text-align: center;
+    color: #444444;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-family: Shabnam;
+}
+
+#form_body {
+    direction: rtl;
+}
+
+#form_body i {
+    color: #737373;
+    alignment-baseline: bottom;
+    margin-top: 30px;
+    margin-right: 50px;
+    float: right;
+}
+
+/*#form_body i ocus]{*/
+    /*color: #c6134f;*/
+/*}*/
+
+.field {
+    height: 40px;
+    width: 288px;
+    margin: 15px;
+    align-content: center;
+    padding: 5px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    font-size: 20px;
+    border-bottom: 2px solid #918f8f;
+    background: #eaebed;
+    font-family: Shabnam;
+}
+
+.field:focus{
+    outline: 0px;
+    border-bottom: 4px solid #c6134f;
+}
+
+#row1 input:focus ~ i {
+    color: #c6134f;
+}
+
+#row2 input:focus ~ i {
+    color: #c6134f;
+}
+
+#submit_button {
+    height: 55px;
+    width: 350px;
+    align-content: center;
+    align-self: center;
+    margin: 15px 52px 15px 15px;
+    padding: 10px;
+    background: #d84949;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    font-family: Shabnam;
+}
+
+#submit_button:hover{
+    box-shadow: 0px 2px 25px #a6a7a8;
+    background: #e54c4c;
+    cursor: auto;
+}
+
+#text_plain {
+    margin: 10px;
+    text-align: center;
+    font-family: Shabnam;
+}
+
+#text_plain a:link {
+    color: #8c8888;
+}
+
+#form_content {
+    padding-top: 15px;
+}
+

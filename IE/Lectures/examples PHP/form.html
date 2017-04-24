@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-16" />
+</head>
+
+<body>
+
+	<form method="post" action="form.php">
+	<fieldset>
+	<legend>Submit By Post!!</legend>
+	<fieldset>
+		<legend>University Grade</legend>
+			<input type="radio" name="grade" value="BS" /> BS
+			<input type="radio" name="grade" value="MS" /> MS
+			<input type="radio" name="grade" value="PhD" /> PhD
+		</fieldset>
+
+		<fieldset>
+		<legend><em>Web Development Skills</em></legend>
+			<input type="checkbox" name="skill_1" value="html" />HTML 
+			<input type="checkbox" name="skill_2" value="xhtml" />XHTML
+			<input type="checkbox" name="skill_3" value="cs" />CSS
+			<input type="checkbox" name="skill_4" value="js" />JavaScript
+			<input type="checkbox" name="skill_5" value="aspnet" />ASP.Net
+			<input type="checkbox" name="skill_6" value="php" />PHP		
+		</fieldset>
+
+		Favorite Programming Language:
+		<select name="lang">
+		<option value="c">C</option>
+		<option value="java">Java</option>
+		<option value="awk">AWK</option>
+		</select>
+		<input type="submit" value="Submit" />
+		</fieldset>
+	</form>
+	<br /><br /><br />
+	<form method="get" action="form.php">
+		<fieldset>
+			<legend> Submit by GET </legend>
+			Title: <input type="text" length="20" name="title" /> 
+			Name: <input type="text" length="20" name="name" />
+			Family: <input type="text" length="20" name="fam" />
+			<input type="submit" value="Submit" />
+		</fieldset>
+	</form>
+
+	<form action="form.php" method="post" name="uploadFrom" enctype="multipart/form-data">
+		<fieldset>
+			<input type="file" name="myfile" />
+			<input type="submit" value="Submit" />
+		</fieldset>
+	</form>
+</body>
+</html>
+

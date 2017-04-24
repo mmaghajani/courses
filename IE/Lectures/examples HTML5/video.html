@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<title>Video Demo 0</title>
+
+<head>
+<style>
+	video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -180px 0 0 -240px;
+	}
+</style>
+
+<script type="text/javascript">
+
+	function videoevent(current){
+			stat = document.getElementById("status");
+			stat.innerHTML = stat.innerHTML + "<br \/\>" + current +" playing"
+	}
+
+</script>
+</head>
+
+<body>
+<video autoplay onplay="videoevent('start')" onended="videoevent('end')" onpause="videoevent('pause')">
+
+	<source src=video.webm type=video/webm>
+</video>
+
+
+<div id="status"> </div>
+</body>

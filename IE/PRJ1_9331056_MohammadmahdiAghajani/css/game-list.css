@@ -1,0 +1,93 @@
+#navigation-bar{
+    min-height: 800px;
+}
+
+#category{
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: auto;
+    direction: rtl;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#rate{
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    min-height: 300px;
+    overflow-x: auto;
+    overflow-y: auto;
+    direction: rtl;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#header{
+    min-height: 200px;
+    width:100%;
+    background: #000;
+}
+
+.picture {
+    /*background: url("../assets/marco_reus_fifa_17-1920x1080-1024x576.jpg") no-repeat center center;*/
+    background-size: cover;
+    min-height: 150px;
+    /*margin-bottom: 5px;*/
+    max-height: 200px !important;
+    max-width: 100%;
+}
+
+
+.slider-item-two {
+    font-weight: bold;
+    direction: rtl;
+    background: #fafff3;
+    min-height: 280px !important;
+    width: 100%;
+    border: 1px #e8e8e8 solid;
+}
+
+.slider-item-two:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #565758;
+}
+
+#frame{
+    background: rgba(0, 0, 0, 0.64);
+    background-size: cover;
+    min-height: inherit !important;
+    width: 100%;
+    padding: 10px;
+}
+
+#main-content{
+    background: url("../assets/call-of-duty-ghosts-pc-screenshot-1920x1080-005.jpg") no-repeat center center;
+    background-size: cover;
+    min-height: inherit !important;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+}
+
+#content-panel{
+    overflow-x: hidden;
+    overflow-y: auto;
+    /*min-height: 1000px !important;*/
+    max-height: 1000px;
+    width:100%;
+    margin-top:50px;
+}
+
+#result{
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.list-group-item{
+    background: transparent;
+    border: 0px;
+    direction: rtl;
+    padding-right: 5px;
+}
+

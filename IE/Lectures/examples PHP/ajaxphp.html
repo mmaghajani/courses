@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+var input, t1, t2;
+function test(){
+	input=document.getElementById("in").value;
+	xmlhttp=new XMLHttpRequest();
+	xmlhttp.onreadystatechange = process;
+	xmlhttp.open("GET",input,true);
+	xmlhttp.send(null);				
+}
+
+function process(){
+	if(this.readyState == 2){
+		t1 = (new Date()).getTime();
+	}
+	if(this.readyState == 4){
+		t2 = (new Date()).getTime();		
+		newxmlhttp=new XMLHttpRequest();
+		url = "record.php"+"?in="+escape(input)+"&send="+escape(t1)+"&get="+escape(t2);
+		newxmlhttp.open("GET",url,false);
+		newxmlhttp.send(null);	
+	}	
+}
+</script>
+</head>
+<body>
+	<input type="text" id="in"></input>
+	<button type="button" onclick="test()">Check</button>
+</body>
+</html>

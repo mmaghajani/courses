@@ -1,0 +1,30 @@
+{
+  "name": "game_center",
+  "version": "1.0.0",
+  "description": "package for this project",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "owl.carousel": "^2.2.0",
+    "video-js": "^0.7.0",
+    "video.js": "^5.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmaghajani/Game-center.git"
+  },
+  "author": "mohammadmahdi aghajani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmaghajani/Game-center/issues"
+  },
+  "homepage": "https://github.com/mmaghajani/Game-center#readme"
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="fa" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+
+    <title>ثبت نام</title>
+    <meta name="description" content="ثبت نام در سایت">
+    <meta name="author" content="mma">
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hw2-global.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.0.2/dist/font-face.css" rel="stylesheet"
+          type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+<div id="header">
+    <ul id="menu" class="container">
+        <li id="account" class="account col-xs-6 col-md-6 col-lg-6 col-sm-6 text-center"><a href="#"><i class="material-icons md-36">account_box</i></a></li>
+        <li id="games" class="games col-xs-6 col-md-6 col-lg-6 col-sm-6 text-center"><a href="#">ceitgames</a></li>
+    </ul>
+</div>
+<div id="content">
+    <div id="form">
+        <div id="title">
+            ثبت نام
+        </div>
+        <div id="form_body">
+            <form action="action_page.php">
+                <div id="row1"><input class="field" type="text"
+                                        name="username"
+                                        placeholder="نام کاربری">
+                    <i class="material-icons md-36">account_circle</i>
+                </div>
+                <div id="row2"><input class="field" type="email" name="email"
+                                        placeholder="رایانامه"><i class="material-icons md-36">email</i>
+                </div>
+                <div id="row3"><input class="field" type="password" name="password"
+                                        placeholder="رمز عبور"><i class="material-icons md-36">https</i>
+                </div>
+                <div id="accept">
+                    <input id="box" type="checkbox" name="rules" value="false"><label for="box" class="label"><a href="#">قوانین</a> را می پذیرم</label>
+                </div>
+                <input id="submit_button" type="submit" value="ثبت نام">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

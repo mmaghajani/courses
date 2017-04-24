@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple drag demo</title>
+<style>
+	.d { width: 200pt; height: 300px; border: 5px solid #ccc; }
+</style>
+
+<script type="text/javascript">
+	function init(){
+		var drop = document.getElementById("drop");
+		drop.ondrop = function (event) {
+				this.innerHTML += "<p>" + event.dataTransfer.getData("Text") + "</p> <br /> <img src='"+event.dataTransfer.getData('Text')+"' alt='abc' />";
+			document.getElementById("msg2").innerHTML = "Okay, I got it";
+			return false;
+		};
+
+		drop.ondragover = function(){
+			return false;
+		};
+
+		drop.ondragenter = function(){
+			document.getElementById("msg2").innerHTML = "I am ready to get the draged object";
+		};
+	}
+
+	function init2(){
+		var drop = document.getElementById("drop2");
+		drop.ondrop = function (event) {
+			this.innerHTML += "<p>" + event.dataTransfer.getData("Text") + "</p>";
+			return false;
+		};
+
+		drop.ondragover = function(){
+			return false;
+		};
+	}
+
+	function ds(){
+		document.getElementById('msg3').innerHTML = 'I am dragging';
+	}
+
+	function de(){
+		document.getElementById('msg3').innerHTML = 'Draging is finished';
+	}
+
+	function ds2(event){
+		//event.dataTransfer.setData("Text", document.getElementById("txt").innerHTML);
+		event.dataTransfer.setData("Text", "mammad");
+	}
+
+
+</script>
+</head>
+
+<body onload="init(); init2()">
+<img src="ceit.png" alt="CEIT" ondragstart="ds()" ondragend="de()" />
+<img src="aut.png" alt="AUT" />
+<span id="txt" ondragstart="ds2(event)" contenteditable="true"> A B C</span>
+
+<table>
+<tr>
+<td>Drop Image</td> <td> Drop Text</td>
+</tr>
+<tr>
+<td>
+<div class="d" id="drop"> </div>
+</td>
+<td>
+<div class="d" id="drop2"> </div>
+</td>
+</tr>
+</table>
+<span id="msg2"> </span> <br />
+<span id="msg3"> </span> <br />
+
+</body>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game List</title>
+
+    <!-- Bootstrap -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+    <!--<link href="../node_modules/video.js/dist/video-js.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css"/>
+
+    <link href="css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hw2-global.css">
+    <link rel="stylesheet" href="css/leaderboard.css">
+    <link href="css/game.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/game-list.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v1.0.2/dist/font-face.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+<div class="row col-xs-12 col-lg-12 col-md-12 col-sm-12 navbar-fixed-top primary-bar" id="primary-bar">
+    <div class="container col-xs-12 col-lg-8 col-md-8 col-sm-8">
+        <nav class="navbar navbar-inverse col-sm-12">
+            <div class="container-fluid col-sm-12">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+                            id="navbar-collapse-button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html"><p class="h4 text-muted"><i
+                                class="icon glyphicon ion-ios-game-controller-b"></i> امیرکبیر <span
+                                class="studio"> استودیو </span>
+                        </p></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-left">
+
+                        <li class="navbar-left"><a href="./login.html"><span class="glyphicon glyphicon-user"></span>
+                            ورود</a>
+                        </li>
+                        <li class="navbar-left">
+                            <form class="navbar-form">
+                                <div class="input-group">
+                                    <input type="text" id="query-search" class="form-control"
+                                           placeholder="جست و جو ...">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-toolbar" type="button" onclick="handlerForSearchPanel()">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="row col-xs-12 col-lg-12 col-md-12 col-sm-12" id="header">
+    <div id="main-content" class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
+        <div id="frame" class="vertical-align-wrap col-xs-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="vertical-align--middle">
+                <div class="row container col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <p class="text-info h3"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row col-xs-12 col-lg-12 col-md-12 col-sm-12" id="content-panel">
+
+    <div id="context" class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+        <div id="result" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+            <div id="cont-slider-1" class="slider col-sm-12 col-md-12 col-xs-12 col-lg-12">
+                <div id="slider-1" class="owl-carousel owl-theme">
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div id="cont-slider-2" class="slider col-sm-12 col-md-12 col-xs-12 col-lg-12">
+                <div id="slider-2" class="owl-carousel owl-theme">
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <div id="cont-slider-3" class="slider col-sm-12 col-md-12 col-xs-12 col-lg-12">
+                <div id="slider-3" class="owl-carousel owl-theme">
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="slider-item-two  text-right owl-item">-->
+                    <!--<div class="picture row">-->
+
+                    <!--</div>-->
+                    <!--<div class="container">-->
+                    <!--<div class="type row">-->
+                    <!--<p class="h4 text-success">FIFA 2017</p>-->
+                    <!--<p class="h5 text-muted">ورزشی ، فوتبال</p>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="stars row">-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 blue_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--<i class="material-icons md-18 light_gray_star">star</i>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <br>
+            <!--<div class="col-sm-8 col-md-8 col-xs-12 col-lg-8 container text-center">-->
+            <!--<div class="col-xs-12">-->
+            <!--<button type="button" class="btn-primary h5">بارگذاری بیشتر</button>-->
+            <!--</div>-->
+            <!--</div>-->
+            <br>
+        </div>
+        <div id="navigation-bar" class="col-sm-12 col-md-3 col-lg-3 col-xs-12">
+            <div id="category" class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                <p class="text-primary h3">دسته بندی بازی ها</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">همه</a>
+                    <a href="#" class="list-group-item">اکشن</a>
+                    <a href="#" class="list-group-item">اول شخص</a>
+                    <a href="#" class="list-group-item">سوم شخص</a>
+                    <a href="#" class="list-group-item">ورزشی</a>
+                    <a href="#" class="list-group-item">فکری</a>
+                    <a href="#" class="list-group-item">استراتژیک</a>
+                </div>
+            </div>
+            <div id="rate" class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                <p class="text-primary h3">امتیاز بازی ها</p>
+                <div class="list-group">
+                    <a href="#" class="list-group-item media">
+                        <div class="media-object media-middle media">
+                            <i class="material-icons md-18 blue_star media-object media-middle">star</i>
+                            <i class="material-icons md-18 blue_star media-object media-middle">star</i>
+                            <i class="material-icons md-18 blue_star media-object media-middle">star</i>
+                            <i class="material-icons md-18 blue_star media-object media-middle">star</i>
+                            <i class="material-icons md-18 blue_star media-object media-middle">star</i>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="material-icons md-18 blue_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                        <i class="material-icons md-18 light_gray_star">star</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer-top col-sm-12">
+        <div class="container col-lg-8 col-sm-8 col-md-8 col-xs-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <a href="index.html">
+                        <p class="h4 text-muted"><i
+                                class="icon glyphicon ion-ios-game-controller-b"></i> امیرکبیر <span
+                                class="studio">استودیو</span></p>
+                    </a>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#" class="text-success">حریم خصوصی</a></li>
+                                <li><a href="#" class="text-success">سوالات متداول</a></li>
+                                <li><a href="#" class="text-success">ارتباط با سازندگان</a></li>
+                                <li><a href="#" class="text-success">درباره ما</a></li>
+                                <li><a href="#" class="text-success">صفحه اصلی</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12" id="social">
+                    <i class="ionicons ion-social-facebook social"></i>
+                    <i class="ionicons ion-social-twitter social"></i>
+                    <i class="ionicons ion-social-instagram social"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-down col-sm-12 vertical-align-wrap">
+        <p class="text-muted h4 text-center vertical-align--middle">تمامی حقوق محفوظ و متعلق به دانشگاه امیرکبیر
+            است</p>
+    </div>
+</footer>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/games_list.js"></script>
+<script src="//vjs.zencdn.net/5.4.6/video.min.js"></script>
+<!--<script src="../node_modules/video.js/dist/video.min.js"></script>-->
+<!--<script>-->
+<!--videojs.options.flash.swf = "../node_modules/videojs-swf/dist/video-js.swf"-->
+<!--</script>-->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

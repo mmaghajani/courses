@@ -1,0 +1,208 @@
+/* 	css rules for register.html page
+	author: 1111111;
+	date: dd-mm-yy;
+	version: 0.1;
+*/
+html , body{
+    background: #3f6aaf;
+}
+
+.label{
+    color: #7c7c7c;
+}
+#form {
+    alignment: center;
+    background: #eaebed;
+    width: 450px;
+    height: 568px;
+    padding-top: 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #4f5051;
+}
+
+#form_footer {
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 50px;
+    padding-top: 25px;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    background: #cccccc;
+    color: #222222;
+    font-size: 20px;
+    font-family: Shabnam;
+}
+
+#form_footer a {
+    font-family: Shabnam;
+}
+
+#form_footer a:link {
+    color: #3a82a3;
+}
+
+#title {
+    text-align: center;
+    color: #444444;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-family: Shabnam;
+}
+
+#form_body {
+    direction: rtl;
+}
+
+#form_body i {
+    color: #737373;
+    alignment-baseline: bottom;
+    margin-top: 30px;
+    margin-right: 50px;
+    float: right;
+}
+
+.field {
+    height: 40px;
+    width: 288px;
+    margin: 15px;
+    align-content: center;
+    padding: 5px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    font-size: 20px;
+    border-bottom: 2px solid #918f8f;
+    background: #eaebed;
+    font-family: Shabnam;
+}
+
+.field:focus {
+    outline: 0px;
+    border-bottom: 4px solid #c6134f;
+}
+
+#row1 input:focus ~ i {
+    color: #c6134f;
+}
+
+#row2 input:focus ~ i {
+    color: #c6134f;
+}
+
+#row3 input:focus ~ i {
+    color: #c6134f;
+}
+
+#submit_button {
+    height: 55px;
+    width: 350px;
+    align-content: center;
+    align-self: center;
+    margin: 15px 52px 15px 15px;
+    padding: 10px;
+    background: #0087ff;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    font-family: Shabnam;
+}
+
+#submit_button:hover {
+    box-shadow: 0px 2px 25px #a6a7a8;
+    background: rgba(0, 135, 255, 0.82);
+    cursor: auto;
+}
+
+#text_plain {
+    margin: 10px;
+    text-align: center;
+    font-family: Shabnam;
+}
+
+#text_plain a:link {
+    color: #8c8888;
+}
+
+#form_content {
+    padding-top: 15px;
+}
+
+/*#box{*/
+/*width: 36px;*/
+/*height: 36px;*/
+/*margin: 10px 10px 0px 10px;*/
+/*border-radius: 2px;*/
+/*background-image: url(../assets/ic_check_box_outline_blank_black_24dp_2x.png);*/
+/*}*/
+
+input[type="checkbox"] {
+    display: none;
+    width: 36px;
+    margin: 10px 10px 0px 10px;
+    height: 36px;
+}
+
+label {
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+    border: 1px solid #d8ced5;
+    border-radius: 5px;
+    content: "\00a0";
+    display: inline-block;
+    font: 36px/1em sans-serif;
+    height: 36px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: center;
+    width: 36px;
+}
+
+input[type="checkbox"]:checked + label:before {
+    border: 1px solid #d8ced5;
+    border-radius: 7px;
+    background: #c6134f;
+    color: #ffffff;
+    content: "\2713";
+    text-align: center;
+}
+
+input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+}
+
+/*#checkbox{*/
+/*float: right;*/
+/*width: 48px;*/
+/*height: 48px;*/
+/*background:url(../assets/ic_check_box_outline_blank_black_24dp_2x.png) left top no-repeat;*/
+/*}*/
+
+/*#checkbox::selection{*/
+/*background:url(../assets/ic_check_box_black_24dp_2x.png) left top no-repeat;*/
+/*}*/
+
+#accept {
+    font-family: Shabnam;
+    width: 288px;
+    margin-right: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #737373;
+    align-content: center;
+    padding: 5px;
+}
+
+#accept a {
+    margin-right: 10px;
+}
+
+#accept a:link {
+    color: #3a82a3;
+}

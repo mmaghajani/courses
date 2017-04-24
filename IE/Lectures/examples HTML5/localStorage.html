@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+function saveNote(){
+	var note = document.getElementById("mynote");
+	localStorage.note=note.innerHTML;
+}
+
+function loadNote(){
+	var note = document.getElementById("mynote");
+	if(localStorage.note){
+		note.innerHTML = localStorage.note;
+	}
+	else{	
+		note.innerHTML = "My Note";
+	}
+
+}
+</script>
+
+</head>
+
+<body onload="loadNote()">
+Insert your note here 
+<div id="mynote" style="border-style:solid; background-color:yellow; width: 50%;" contenteditable="true"> </div>
+<input type="button" value="Save Note" onclick="saveNote()">
+</body>
+
+</html>

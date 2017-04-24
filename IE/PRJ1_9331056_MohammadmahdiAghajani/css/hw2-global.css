@@ -1,0 +1,133 @@
+/* 	global css rules in hw2 pages like font-family (@font-face), boxes, and login-register inputs
+	author: 1111111;
+	date: dd-mm-yy;
+	version: 0.1;
+*/
+
+html, body {
+    /*background-color: #3f6aaf;*/
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+* {
+    font-family: Shabnam;
+}
+
+#content{
+    padding: 70px;
+}
+
+#header {
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    padding: 0px;
+    border: 0px;
+    background: #3c3d3c;
+}
+
+ul#menu {
+    height: 100%;
+    list-style: none;
+    padding: 0px;
+    border: 0px;
+    margin: auto;
+}
+
+.account {
+    margin: auto;
+    font-weight: 100;
+    float: left;
+    text-align: center;
+}
+
+.games {
+    float: right;
+    margin: auto;
+    padding-top: 5px;
+    text-align: center;
+}
+
+ul#menu li a {
+    font-size: 27px;
+    text-align: center;
+    color: #cccccc;
+    text-decoration: none;
+    font-family: Shabnam;
+    font-weight: bold;
+    align-self: center;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('Shabnam.eot');
+    src: url('Shabnam.eot?#iefix') format('embedded-opentype'),
+    url('Shabnam.woff') format('woff'),
+    url('Shabnam.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Shabnam;
+    src: url('Shabnam-Bold.eot');
+    src: url('Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Shabnam-Bold.woff') format('woff'),
+    url('Shabnam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+.material-icons {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48px; /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    vertical-align: text-bottom;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-18 {
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: Material Icons ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    src: url(../assets/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../assets/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../assets/MaterialIcons-Regular.woff) format('woff'),
+    url(../assets/MaterialIcons-Regular.ttf) format('truetype');
+}

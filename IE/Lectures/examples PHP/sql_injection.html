@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-16" />
+</head>
+
+<body>
+
+	<form method="GET" action="single_query_injection.php">
+	<fieldset>
+	<legend>Query by ID</legend>
+		We assume that nobody knows ID of other clients<br />
+		Find out your account information using your ID<br />
+
+		ID: <input name="id" type="text" />
+		<input type="submit" value="Submit" />
+	</fieldset>
+	</form>
+	
+	<form method="GET" action="single_query_injection.php">
+	<fieldset>
+	<legend>Query by ID &amp; Pass</legend>
+		Find out your account information using your ID &amp; Pass<br />
+
+		ID: <input name="id" type="text" />
+		Pass: <input name="pass" type="text" />
+		<input type="submit" value="Submit" />		
+	</fieldset>
+	</form>
+
+
+	<form method="GET" action="multi_query_injection.php">
+	<fieldset>
+	<legend>Multiple Query</legend>
+		ID 1: <input name="id1" type="text" />
+		ID 2: <input name="id2" type="text" />
+		<input type="submit" value="Submit" />
+	</fieldset>
+	</form>
+
+</body>
+</html>
+

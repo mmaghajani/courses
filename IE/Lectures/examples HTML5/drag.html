@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+	Drag and Drop Example
+</title>
+
+<style type="text/css">
+	#target1, #target2, #target3{
+		float:left; width:250px; height:300px;
+		padding:10px; margin:10px;
+	}
+
+	#draggable1, #draggable2, #draggable3{
+		width:75px; height:70px; padding:5px;
+		margin:5px;
+	}
+	#target1 {background-color: cyan;}
+	#target2 {background-color: cyan;}
+	#target3 {background-color: cyan;}
+	#draggable1 {background-color: orange;}
+	#draggable2 {background-color: orange;}
+	#draggable3 {background-color: orange;}
+</style>
+
+<script type="text/javascript">
+	function start(e){
+		e.dataTransfer.effectAllowed='move';
+		e.dataTransfer.setData("Data", e.target.getAttribute('id'));
+		e.dataTransfer.setDragImage(e.target, 0, 0);
+		return true;
+	}
+	
+	function enter(e){
+		return true;
+	}
+	
+	function over(e){
+		var iddraggable =
+		e.dataTransfer.getData("Data");
+		var id = e.target.getAttribute('id');
+		if(id =='target1')
+			return false;
+		if((id =='target2')	&& iddraggable == 'draggable3')
+			return false;
+		else if(id =='target3' && (iddraggable == 'draggable1' || iddraggable =='draggable2'))
+			return false;
+		else
+			return true;
+	}
+	
+	function drop(e){
+		var iddraggable =
+		e.dataTransfer.getData("Data");
+		e.target.appendChild(document.getElementById(iddraggable));
+		e.stopPropagation();
+		return false;
+	}
+	
+	function end(e){
+		//e.dataTransfer.clearData("Data");
+		return true
+	}
+</script>
+</head>
+
+<body>
+<h1>Drag and Drop Example</h1>
+<div id="target1" 
+	ondragenter="return enter(event)"
+	ondragover="return over(event)"
+	ondrop="return drop(event)">
+	Trget 1
+
+	<div id="draggable1" draggable="true"
+		ondragstart="return start(event)"
+		ondragend="return end(event)">
+		Drag 1
+	</div>
+	
+	<div id="draggable2" draggable="true"
+		ondragstart="return start(event)"
+		ondragend="return end(event)">
+		Drag 2
+	</div>
+	
+	<div id="draggable3" draggable="true"
+		ondragstart="return start(event)"
+		ondragend="return end(event)">
+		Drag 3
+	</div>		
+</div>
+
+<div id="target2"
+	ondragenter="return enter(event)"
+	ondragover="return over(event)"
+	ondrop="return drop(event)">
+	Target 2
+</div>
+
+<div id="target3"
+	ondragenter="return enter(event)"
+	ondragover="return over(event)"
+	ondrop="return drop(event)">
+	Target 3
+</div>
+</body>
+</html>

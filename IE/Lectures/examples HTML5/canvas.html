@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Canvas Example
+</title>
+
+<script type="text/javascript">
+	var canvas;
+	var ctx;
+	var TO_RADIANS = Math.PI/180;
+
+	function start(){
+		canvas = document.getElementById("canvas");
+		ctx = canvas.getContext('2d');
+
+		ctx.beginPath();
+		ctx.strokeStyle = "rgb(0, 0, 240)";
+		ctx.arc(200,200,100,0,90 * TO_RADIANS,0);
+		ctx.lineTo(200, 100);
+		ctx.lineTo(300, 100);
+		ctx.lineTo(350, 150);
+		ctx.closePath();
+		ctx.stroke();
+	}
+
+	function update(){
+		ctx.save();
+		ctx.beginPath();
+		ctx.strokeStyle = "rgb(0, 200, 0)";
+		ctx.moveTo(150, 100);
+		ctx.lineTo(100, 200);
+		ctx.lineTo(150, 200);
+		ctx.lineTo(50, 50);
+		ctx.closePath();
+		ctx.fill();
+		
+		ctx.save();
+		ctx.strokeStyle = "rgb(250, 0, 0)";
+		ctx.moveTo(180, 130);
+		ctx.lineTo(220, 280);
+		ctx.lineTo(50, 30);
+		ctx.closePath();
+		ctx.stroke();
+		
+	}
+
+	var transformCnt=0;
+	var scaled = 0;
+	function scale(){
+		window.alert("Scaled to (3,1)");
+		transformCnt++;
+		ctx.save();
+		ctx.scale(3,1);
+		scaled++;
+	}
+
+	var translated = 0;
+	function translate(){
+		window.alert("Translated to (200, 100)");
+		transformCnt++;
+		ctx.save();
+		ctx.translate(200,100);
+		translated++;
+	}
+
+	var rotated = 0;
+	function rotate(){
+		window.alert("Rotate 30 degree")
+		transformCnt++;
+		ctx.save();
+		ctx.rotate(30 * TO_RADIANS);
+		rotated++;
+	}
+
+	function restore(){
+		if(transformCnt > 0){
+			ctx.restore();
+			transformCnt--;
+			window.alert(transformCnt + " restoration is available");
+
+			if(scaled > 0) scaled--;
+			if(rotated > 0) rotated--;
+			if(translated > 0) translated--;
+		}
+		else
+			window.alert("You have not saved any state")
+	}
+
+	function shiftctx(){
+		imagedata=ctx.getImageData(50,50,canvas.width - 150,canvas.height - 150);
+		ctx.putImageData(imagedata, 150,150);
+	}
+
+	function ctxclear(){
+		ctx.save()
+		for(i=0; i < translated; i++) ctx.translate(-200,-100);
+		for(i=0; i < rotated; i++) ctx.rotate((360 - 30) * TO_RADIANS)
+		for(i=0; i < scaled; i++) ctx.scale(1/3, 1);
+		ctx.clearRect(0,0,canvas.width,canvas.height);
+		ctx.beginPath();
+		ctx.restore();
+	}
+
+	function exportctx(){
+		imageurl = canvas.toDataURL("image/png");
+		canimg = document.getElementById("canvasimage");
+		//canimg.innerHTML=imageurl;
+		canimg.innerHTML='<image src="'+imageurl+'">';
+		document.getElementById("dataurl").innerHTML = imageurl;
+	}
+
+	function drawText(){
+		ctx.font="90px Arial";
+		ctx.fillText("I Love HTML5", 50, 100);
+		ctx.strokeText("Canvas is fantastic", 50, 300);
+	}
+
+	function paintctx(){
+		canvas.addEventListener('mousedown', mousedown);
+		canvas.addEventListener('mouseup', mouseup);
+		ctx.beginPath();
+	}
+
+	/*
+	 * Get mouse event coordinate converted to canvas coordinate
+	 * c: The canvas object
+	 * e: A mouse event
+	 */
+	function toCanvasX(c, e) {
+	  var posx = 0;
+
+	  if (e.pageX)   {
+		posx = e.pageX;
+	  } else if (e.clientX)   {
+		posx = e.clientX + document.body.scrollLeft
+		  + document.documentElement.scrollLeft;
+	  }
+	  posx = posx - c.offsetLeft;
+	  return posx;
+	}
+
+	function toCanvasY(c, e) {
+	  var posy = 0;
+
+	  if (e.pageY)   {
+		posy = e.pageY;
+	  } else if (e.clientY)   {
+		posy = e.clientY + document.body.scrollTop
+		  + document.documentElement.scrollTop;
+	  }
+	  posy = posy - c.offsetTop;
+
+	  return posy;
+	}
+
+	var start_event, end_event;
+	var start_painting = 0;
+
+	function mousedown(event){
+		start_paint = 1;
+		start_event = event;
+	}
+
+	function mouseup(event){
+		if(start_paint != 0){
+			end_event = event
+
+			ctx.moveTo(toCanvasX(canvas, start_event), toCanvasY(canvas, start_event));
+			ctx.lineTo(toCanvasX(canvas, end_event), toCanvasY(canvas, end_event));
+			ctx.stroke();
+		}
+	}
+</script>
+</head>
+
+<body>
+	<h1>Canvas Example</h1>
+	<button onclick="start()">Start</button>
+	<button onclick="update()">Update</button>
+	<button onclick="scale()">Scale</button>
+	<button onclick="translate()">Translate</button>
+	<button onclick="rotate()">Rotate</button>
+	<button onclick="shiftctx()">Shift</button>
+	<button onclick="restore()">Restore</button>
+	<button onclick="ctxclear()">Clear</button>
+	<button onclick="drawText()">Text</button>
+	<button onclick="paintctx()">Paint</button>
+	<button onclick="exportctx()">Export</button>
+	<br />
+	<canvas id="canvas" width="1000" height="500" style="border:solid">
+	</canvas>
+		<hr />
+	This is the output image of Canvas in PNG format, you can save it ;-)
+	<div id="canvasimage" style="border:solid"></div>
+	<div id="dataurl" style="border:solid"></div>
+</body>
+</html>

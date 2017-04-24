@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Web Form Example
+</title>
+</head>
+<body>
+<h1>Web Form Example</h1>
+<form method="get" action="http://127.0.0.1">
+	<table border="1" cellpadding="5">
+		<tr>
+			<td>Text</td><td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td>URL</td><td><input name="url" type="url"></td>
+		</tr>
+		<tr>
+			<td>Email</td><td><input name="email" type="email" autocomplete="on" list="emails">
+				<datalist id="emails">
+					<option label="Ali" value="ali@a.com" />
+					<option label="Babak" value="babak@b.com" />
+					<option label="Hassan" value="hassan@h.com" />
+				</datalist>
+			</td>
+		</tr>
+		<tr>
+			<td>Range</td><td><input name="range" type="range" step="5" value="40" min="20" max="200"></td>
+		</tr>
+		<tr>
+			<td>Number</td><td><input name="number" type="number" min="0" max="100" step="5" value="40"></td>
+		</tr>
+		<tr>
+			<td>Date</td><td><input name="date" type="date"></td>
+		</tr>
+		<tr>
+			<td>Week</td><td><input name="week" type="week"></td>
+		</tr>
+		<tr>
+			<td>Month</td><td><input name="month" type="month"></td>
+		</tr>
+		<tr>
+			<td>Time</td><td><input name="time" type="time"></td>
+		</tr>
+		<tr>
+			<td>Color</td><td><input name="color" type="color"></td>
+		</tr>
+	</table>
+	<br />
+	<input type="submit" value="Submit">
+</form>
+
+<input type="url" list="url_list" name="link" autocomplete="on"/>
+<datalist id="url_list">
+<option label="W3Schools" value="http://www.w3schools.com" />
+<option label="Google" value="http://www.google.com" />
+<option label="Microsoft" value="http://www.microsoft.com" />
+</datalist>
+
+</body>
+</html>

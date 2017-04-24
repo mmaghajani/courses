@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<note>
+	<to>Hassan</to>
+	<from>Hossein</from>
+	<heading>Reminder</heading>
+	<body>Don't forget the exam :-O</body>
+	
+	<to>Hossein</to>
+	<from>Hassan</from>
+	<heading>Response</heading>
+	<body>Okay! Thanks for the reminder</body>
+</note>
+

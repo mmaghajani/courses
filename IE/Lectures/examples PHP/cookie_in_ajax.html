@@ -1,0 +1,74 @@
+<html>
+<head>
+<script type="text/javascript">
+function LoadTextDocSynch(url){
+	xmlhttp=new XMLHttpRequest();
+	url += "?"+(new Date()).getTime();
+	xmlhttp.open("GET",url,false);
+	xmlhttp.send(null);	
+	if(xmlhttp.status == 200){
+		document.getElementById('test').innerHTML=xmlhttp.responseText;
+	}
+	else{
+		window.alert("Error "+ xmlhttp.statusText);
+	}
+}
+/*
+function LoadTextDocAsynch(url){
+	var xmlhttp=new XMLHttpRequest();
+	xmlhttp.onreadystatechange = process;
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send(null);		
+}
+
+function process(){
+	if(this.readyState == 4){
+		if(this.status == 200){
+			document.getElementById('test').innerHTML=this.responseText;
+		}
+		else{
+			window.alert("Error "+ xmlhttp.statusText);
+		}
+	}
+}
+
+function LoadXMLDocAsynch(url){
+	var xmlhttp=new XMLHttpRequest();
+	xmlhttp.onreadystatechange = processXML;
+	xmlhttp.open("GET",url,true);
+	xmlhttp.send(null);		
+}
+
+function getNodeValue(doc, name){
+	return (doc.getElementsByTagName(name))[0].childNodes[0].nodeValue;
+}
+
+function processXML(){
+	if(this.readyState == 4){
+		if(this.status == 200){
+			var xmlDoc = this.responseXML.documentElement;
+			var res = "Name: "+ getNodeValue(xmlDoc, "name") +"<br />";
+			res += "Model: "+ getNodeValue(xmlDoc, "model") +"<br />";
+			res += "OS: "+ getNodeValue(xmlDoc, "OS") + " - "+ getNodeValue(xmlDoc, "version");
+			document.getElementById("test").innerHTML = res;
+		}
+		else{
+			window.alert("Error "+ xmlhttp.statusText);
+		}
+	}
+}
+*/
+</script>
+</head>
+<body>
+	<div id="test" style="border-style:solid; width:50%">
+		<h2>Click to let AJAX change this text</h2>	
+	</div>
+	<br />
+	<button type="button" onclick="LoadTextDocSynch('show_cookies.php')">Click Me (test1.txt)</button>
+	<!--
+	<button type="button" onclick="LoadTextDocAsynch('test2.txt')">Click Me (test2.txt) </button>
+	<button type="button" onclick="LoadXMLDocAsynch('test3.xml')">Click Me (test3.xml) </button>
+	-->
+</body>
+</html>
