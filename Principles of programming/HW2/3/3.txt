@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+#include <conio.h>
+using namespace std;
+int main()
+{
+	printf( "Pls enter five-digit number ! \n" ) ;
+	double i = 4 , symmetric = 0 ;
+	
+	int n ;
+	scanf("%d" , &n ) ;
+	int temp = n ;
+	
+	while( temp > 0 )
+	{
+		symmetric += ( temp%10 ) * pow( 10 , i ) ;
+		i-- ;
+		temp /= 10 ;
+	}
+	
+	if( symmetric == n )	printf( "The number is palindrome ! " ) ;
+	else					printf( "The number is not palindrome ! " ) ;
+	
+	getch();
+	return 0 ;
+	
+}

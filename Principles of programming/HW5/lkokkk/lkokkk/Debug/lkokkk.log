@@ -1,0 +1,32 @@
+﻿Build started 12/10/2014 8:15:28 PM.
+     1>Project "D:\c++\project\principles of programming\HW5\lkokkk\lkokkk\lkokkk.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\lkokkk.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "[llplplplpl.cpp"
+         [llplplplpl.cpp
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(173): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _getch. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\conio.h(128) : see declaration of 'getch'
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(291): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(293): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(297): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(299): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(312): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(314): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(318): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(320): warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+     1>d:\c++\project\principles of programming\hw5\lkokkk\lkokkk\[llplplplpl.cpp(358): warning C4715: 'bin_search' : not all control paths return a value
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\c++\project\principles of programming\HW5\lkokkk\Debug\lkokkk.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\lkokkk.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\c++\project\principles of programming\HW5\lkokkk\Debug\lkokkk.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\c++\project\principles of programming\HW5\lkokkk\Debug\lkokkk.lib" /MACHINE:X86 "Debug\[llplplplpl.obj"
+         LINK : D:\c++\project\principles of programming\HW5\lkokkk\Debug\lkokkk.exe not found or not built by the last incremental link; performing full link
+         lkokkk.vcxproj -> D:\c++\project\principles of programming\HW5\lkokkk\Debug\lkokkk.exe
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\c++\project\principles of programming\HW5\lkokkk\Debug\lkokkk.exe;#1" /manifest Debug\lkokkk.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\lkokkk.unsuccessfulbuild".
+         Touching "Debug\lkokkk.lastbuildstate".
+     1>Done Building Project "D:\c++\project\principles of programming\HW5\lkokkk\lkokkk\lkokkk.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.70

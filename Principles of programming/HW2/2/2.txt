@@ -1,0 +1,22 @@
+#include <iostream>
+#include <conio.h>
+using namespace std ;
+int main()
+{
+	int large1 = -1 , large2 = -1 , n ;
+	
+	for( int i = 1 ; i <= 10 ; i++ )
+	{
+		printf( "Pls enter number %d : " , i ) ;
+		
+		scanf( "%d" , &n ) ;
+		if( n >= large1 )	large2  = large1 , large1 = n ;
+		else if( n <= large1 && n >= large2 )	large2 = n ;
+	}
+	
+	printf( "First largest number is : %d \n" , large1 );
+	printf( "Second largest number is : %d \n" , large2 );
+	
+	getch();
+	return 0 ;
+}
