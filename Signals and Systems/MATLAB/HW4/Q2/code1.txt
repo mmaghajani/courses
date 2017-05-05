@@ -1,0 +1,12 @@
+syms w t
+fourier( sin(t)./t , t , w )
+ 
+ans =
+ 
+pi*heaviside(1 - w) - pi*heaviside(- w - 1)
+
+fourier( 1 + exp( -1 .* (t.^2)) , t , w )
+ 
+ans =
+ 
+2*pi*dirac(w) + pi^(1/2)*exp(-w^2/4)

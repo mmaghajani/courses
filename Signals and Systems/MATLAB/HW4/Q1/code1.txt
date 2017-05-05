@@ -1,8 +1,11 @@
-function [ ] = func(f,L1,L2)
+function [ ] = ftransform(f,L1,L2)
 clc
 
-syms q w t ;
-X = int(f*exp(-q*w*t),t,L1,L2);
+j = sym('j');
+w = sym('w');
+t = sym('t');
+
+X = int(f*exp(-j*w*t),t,L1,L2);
 disp('  X(jw) ' ) , pretty(X)
 
 w = -20:.01:20;
