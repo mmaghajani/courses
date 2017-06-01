@@ -1,0 +1,405 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_1_0_clk_wiz
+INFO: [VRFC 10-2458] undeclared symbol clk_in1_design_1_clk_wiz_1_0, assumed default net type wire [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:81]
+INFO: [VRFC 10-2458] undeclared symbol clk_out1_design_1_clk_wiz_1_0, assumed default net type wire [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_clk_wiz.v:133]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_and.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_and
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_latch_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_latch_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_or.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry_or
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_carry
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_command_fifo.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_command_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_mask.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_mask
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_sel.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_sel
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator_static.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator_static
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_comparator.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux_enc.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux_enc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_nto1_mux.v" into library generic_baseblocks_v2_1_0
+INFO: [VRFC 10-311] analyzing module generic_baseblocks_v2_1_0_nto1_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axi2vector.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_axic_srl_fifo.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_infrastructure_v1_1/hdl/verilog/axi_infrastructure_v1_1_vector2axi.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v" into library axi_register_slice_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_7_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axi_register_slice.v" into library axi_register_slice_v2_1_7
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_7_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_fifo.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_axic_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_fifo_gen.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_fifo_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_srl_fifo.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_axic_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axic_reg_srl_fifo.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_axic_reg_srl_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_ndeep_srl.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_ndeep_srl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_data_fifo_v2_1/hdl/verilog/axi_data_fifo_v2_1_axi_data_fifo.v" into library axi_data_fifo_v2_1_6
+INFO: [VRFC 10-311] analyzing module axi_data_fifo_v2_1_6_axi_data_fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter_sasd.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_addr_arbiter_sasd
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_arbiter.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_addr_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_addr_decoder.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_addr_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_arbiter_resp.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_arbiter_resp
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar_sasd.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_crossbar_sasd
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_crossbar.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_decerr_slave
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_si_transactor.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_si_transactor
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_splitter.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_mux.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_wdata_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_wdata_router.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_wdata_router
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_crossbar_v2_1/hdl/verilog/axi_crossbar_v2_1_axi_crossbar.v" into library axi_crossbar_v2_1_8
+INFO: [VRFC 10-311] analyzing module axi_crossbar_v2_1_8_axi_crossbar
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_xbar_0/sim/design_1_xbar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xbar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/microblaze_v9_5/hdl/microblaze_v9_5_vh_rfs.vhd" into library microblaze_v9_5_3
+INFO: [VRFC 10-307] analyzing entity MB_SRL16E
+INFO: [VRFC 10-307] analyzing entity MB_SRLC16E
+INFO: [VRFC 10-307] analyzing entity MB_LUT1
+INFO: [VRFC 10-307] analyzing entity MB_LUT2
+INFO: [VRFC 10-307] analyzing entity MB_LUT3
+INFO: [VRFC 10-307] analyzing entity MB_LUT4
+INFO: [VRFC 10-307] analyzing entity MB_LUT5
+INFO: [VRFC 10-307] analyzing entity MB_LUT6
+INFO: [VRFC 10-307] analyzing entity MB_LUT6_2
+INFO: [VRFC 10-307] analyzing entity MB_MUXCY
+INFO: [VRFC 10-307] analyzing entity MB_XORCY
+INFO: [VRFC 10-307] analyzing entity MB_AND2B1L
+INFO: [VRFC 10-307] analyzing entity MB_OR2L
+INFO: [VRFC 10-307] analyzing entity MB_MUXF7
+INFO: [VRFC 10-307] analyzing entity MB_MUXF8
+INFO: [VRFC 10-307] analyzing entity MB_MUXF9
+INFO: [VRFC 10-307] analyzing entity MB_RAM32M
+INFO: [VRFC 10-307] analyzing entity MB_RAM16X1D
+INFO: [VRFC 10-307] analyzing entity MB_RAM32X1D
+INFO: [VRFC 10-307] analyzing entity MB_MULT18X18S
+INFO: [VRFC 10-307] analyzing entity MB_FD
+INFO: [VRFC 10-307] analyzing entity MB_FDR
+INFO: [VRFC 10-307] analyzing entity MB_FDRE
+INFO: [VRFC 10-307] analyzing entity MB_FDE
+INFO: [VRFC 10-307] analyzing entity MB_FDSE
+INFO: [VRFC 10-307] analyzing entity MB_FDS
+INFO: [VRFC 10-307] analyzing entity MB_FDRSE
+INFO: [VRFC 10-307] analyzing entity MB_MULT_AND
+INFO: [VRFC 10-307] analyzing entity MB_RAMB36
+INFO: [VRFC 10-307] analyzing entity MB_MUXCY_XORCY
+INFO: [VRFC 10-307] analyzing entity mb_sync_bit
+INFO: [VRFC 10-307] analyzing entity mb_sync_vec
+INFO: [VRFC 10-307] analyzing entity mux_bus
+INFO: [VRFC 10-307] analyzing entity Parity_Recursive_LUT6
+INFO: [VRFC 10-307] analyzing entity Parity
+INFO: [VRFC 10-307] analyzing entity comparator
+INFO: [VRFC 10-307] analyzing entity carry_and
+INFO: [VRFC 10-307] analyzing entity carry_or
+INFO: [VRFC 10-307] analyzing entity carry_equal
+INFO: [VRFC 10-307] analyzing entity carry_compare
+INFO: [VRFC 10-307] analyzing entity carry_compare_mask
+INFO: [VRFC 10-307] analyzing entity carry_compare_const
+INFO: [VRFC 10-307] analyzing entity Carry_Compare_GE
+INFO: [VRFC 10-307] analyzing entity find_first_bit
+INFO: [VRFC 10-307] analyzing entity mux4_8
+INFO: [VRFC 10-307] analyzing entity mux4
+INFO: [VRFC 10-307] analyzing entity vec_mux
+INFO: [VRFC 10-307] analyzing entity srl_fifo
+INFO: [VRFC 10-307] analyzing entity ALU_Bit
+INFO: [VRFC 10-307] analyzing entity ALU
+INFO: [VRFC 10-307] analyzing entity MSR_Reg_Bit
+INFO: [VRFC 10-307] analyzing entity MSR_Reg
+INFO: [VRFC 10-307] analyzing entity msr_reg_gti
+INFO: [VRFC 10-307] analyzing entity dsp_module
+INFO: [VRFC 10-307] analyzing entity mul_unit
+INFO: [VRFC 10-307] analyzing entity Div_unit
+INFO: [VRFC 10-307] analyzing entity Div_unit_gti
+INFO: [VRFC 10-307] analyzing entity Operand_Select_Bit
+INFO: [VRFC 10-307] analyzing entity Operand_Select
+INFO: [VRFC 10-307] analyzing entity Operand_Select_gti
+INFO: [VRFC 10-307] analyzing entity PC_Bit
+INFO: [VRFC 10-307] analyzing entity PC_Module
+INFO: [VRFC 10-307] analyzing entity PC_Module_gti
+INFO: [VRFC 10-307] analyzing entity PreFetch_Buffer
+INFO: [VRFC 10-307] analyzing entity PreFetch_Buffer_gti
+INFO: [VRFC 10-307] analyzing entity Register_File_Bit
+INFO: [VRFC 10-307] analyzing entity Register_File
+INFO: [VRFC 10-307] analyzing entity Register_File_gti
+INFO: [VRFC 10-307] analyzing entity count_leading_zeros
+INFO: [VRFC 10-307] analyzing entity Shift_Logic_Bit
+INFO: [VRFC 10-307] analyzing entity Shift_Logic_Module
+INFO: [VRFC 10-307] analyzing entity Shift_Logic_Module_gti
+INFO: [VRFC 10-307] analyzing entity Zero_Detect
+INFO: [VRFC 10-307] analyzing entity Zero_Detect_gti
+INFO: [VRFC 10-307] analyzing entity barrel_shift
+INFO: [VRFC 10-307] analyzing entity Barrel_Shifter_gti
+INFO: [VRFC 10-307] analyzing entity WB_Mux_Bit
+INFO: [VRFC 10-307] analyzing entity WB_Mux
+INFO: [VRFC 10-307] analyzing entity Data_Read_Steering
+INFO: [VRFC 10-307] analyzing entity Byte_Doublet_Handle
+INFO: [VRFC 10-307] analyzing entity Byte_Doublet_Handle_gti
+INFO: [VRFC 10-307] analyzing entity Data_Flow_Logic
+INFO: [VRFC 10-307] analyzing entity Streaming_AXI
+INFO: [VRFC 10-307] analyzing entity exception_registers
+INFO: [VRFC 10-307] analyzing entity exception_registers_gti
+INFO: [VRFC 10-307] analyzing entity FPU_ADDSUB
+INFO: [VRFC 10-307] analyzing entity FPU_DIV
+INFO: [VRFC 10-307] analyzing entity FPU_MUL
+INFO: [VRFC 10-307] analyzing entity fpu_conv
+INFO: [VRFC 10-307] analyzing entity fpu_sqrt
+INFO: [VRFC 10-307] analyzing entity Fpu
+INFO: [VRFC 10-307] analyzing entity PVR
+INFO: [VRFC 10-307] analyzing entity Result_Mux_Bit
+INFO: [VRFC 10-307] analyzing entity Result_Mux
+INFO: [VRFC 10-307] analyzing entity stack_protection
+INFO: [VRFC 10-307] analyzing entity Data_Flow
+INFO: [VRFC 10-307] analyzing entity Data_Flow_gti
+INFO: [VRFC 10-307] analyzing entity jump_logic
+INFO: [VRFC 10-307] analyzing entity Decode
+INFO: [VRFC 10-307] analyzing entity Decode_gti
+INFO: [VRFC 10-307] analyzing entity address_hit
+INFO: [VRFC 10-307] analyzing entity address_data_hit
+INFO: [VRFC 10-307] analyzing entity Debug
+INFO: [VRFC 10-307] analyzing entity Debug_Profile
+INFO: [VRFC 10-307] analyzing entity debug_stat_counter
+INFO: [VRFC 10-307] analyzing entity Debug_Stat
+INFO: [VRFC 10-307] analyzing entity Debug_Trace
+INFO: [VRFC 10-307] analyzing entity DAXI_interface
+INFO: [VRFC 10-307] analyzing entity IAXI_Interface
+INFO: [VRFC 10-307] analyzing entity RAM_Module
+INFO: [VRFC 10-307] analyzing entity LRU_Module
+INFO: [VRFC 10-307] analyzing entity victim_cache
+INFO: [VRFC 10-307] analyzing entity stream_cache
+INFO: [VRFC 10-307] analyzing entity Cache_Interface
+INFO: [VRFC 10-307] analyzing entity Icache
+INFO: [VRFC 10-307] analyzing entity DCache
+INFO: [VRFC 10-307] analyzing entity DCache_gti
+INFO: [VRFC 10-307] analyzing entity cache_valid_bit_detect
+INFO: [VRFC 10-307] analyzing entity cachehit_detect
+INFO: [VRFC 10-307] analyzing entity DCache_wb
+INFO: [VRFC 10-307] analyzing entity instr_mux
+INFO: [VRFC 10-307] analyzing entity read_data_mux
+INFO: [VRFC 10-307] analyzing entity interrupt_mode_converter
+INFO: [VRFC 10-307] analyzing entity MMU_TLB
+INFO: [VRFC 10-307] analyzing entity MMU_UTLB_RAM
+INFO: [VRFC 10-307] analyzing entity MMU_UTLB
+INFO: [VRFC 10-307] analyzing entity MMU
+INFO: [VRFC 10-307] analyzing entity MicroBlaze_Area
+INFO: [VRFC 10-307] analyzing entity MicroBlaze_GTi
+INFO: [VRFC 10-307] analyzing entity MicroBlaze_Core
+INFO: [VRFC 10-307] analyzing entity MicroBlaze
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_microblaze_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_v10_v3_0/hdl/vhdl/lmb_v10.vhd" into library lmb_v10_v3_0_7
+INFO: [VRFC 10-307] analyzing entity lmb_v10
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_dlmb_v10_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_ilmb_v10_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_funcs.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_primitives.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity MB_LUT6
+INFO: [VRFC 10-307] analyzing entity MB_MUXCY
+INFO: [VRFC 10-307] analyzing entity MB_XORCY
+INFO: [VRFC 10-307] analyzing entity MB_MUXF7
+INFO: [VRFC 10-307] analyzing entity MB_MUXF8
+INFO: [VRFC 10-307] analyzing entity MB_FDRE
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/xor18.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity XOR18
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/parity.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity Parity
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/parityenable.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity ParityEnable
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/checkbit_handler.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity checkbit_handler
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/correct_one_bit.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity Correct_One_Bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity pselect
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/pselect_mask.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity pselect_mask
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/axi_interface.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity axi_interface
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_mux.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity lmb_mux
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lmb_bram_if_cntlr_v4_0/hdl/vhdl/lmb_bram_if_cntlr.vhd" into library lmb_bram_if_cntlr_v4_0_7
+INFO: [VRFC 10-307] analyzing entity lmb_bram_if_cntlr
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_dlmb_bram_if_cntlr_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_ilmb_bram_if_cntlr_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.vhd" into library blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_regs_fwd_v8_3
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_write_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity write_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_axi_read_wrapper_beh
+INFO: [VRFC 10-307] analyzing entity read_netlist
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_output_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_softecc_output_reg_stage
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1_mem_module
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_v8_3_1
+INFO: [VRFC 10-307] analyzing entity beh_ff_clr
+INFO: [VRFC 10-307] analyzing entity beh_ff_ce
+INFO: [VRFC 10-307] analyzing entity beh_ff_pre
+INFO: [VRFC 10-307] analyzing entity beh_muxf7
+INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_lmb_bram_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/ipif_pkg.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/pselect_f.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-307] analyzing entity pselect_f
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/address_decoder.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-307] analyzing entity address_decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/slave_attachment.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-307] analyzing entity slave_attachment
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/axi_lite_ipif.vhd" into library axi_lite_ipif_v3_0_3
+INFO: [VRFC 10-307] analyzing entity axi_lite_ipif
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/mdm_v3_2/hdl/vhdl/mdm_primitives.vhd" into library mdm_v3_2_4
+INFO: [VRFC 10-307] analyzing entity carry_and
+INFO: [VRFC 10-307] analyzing entity carry_or_vec
+INFO: [VRFC 10-307] analyzing entity carry_or
+INFO: [VRFC 10-307] analyzing entity select_bit
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/mdm_v3_2/hdl/vhdl/arbiter.vhd" into library mdm_v3_2_4
+INFO: [VRFC 10-307] analyzing entity Arbiter
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/mdm_v3_2/hdl/vhdl/srl_fifo.vhd" into library mdm_v3_2_4
+INFO: [VRFC 10-307] analyzing entity SRL_FIFO
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/mdm_v3_2/hdl/vhdl/bus_master.vhd" into library mdm_v3_2_4
+INFO: [VRFC 10-307] analyzing entity bus_master
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/mdm_v3_2/hdl/vhdl/jtag_control.vhd" into library mdm_v3_2_4
+INFO: [VRFC 10-307] analyzing entity JTAG_CONTROL
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/mdm_v3_2/hdl/vhdl/mdm_core.vhd" into library mdm_v3_2_4
+INFO: [VRFC 10-307] analyzing entity MDM_Core
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/mdm_v3_2/hdl/vhdl/mdm.vhd" into library mdm_v3_2_4
+INFO: [VRFC 10-307] analyzing entity MDM
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_mdm_1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/lib_cdc_v1_0/hdl/src/vhdl/cdc_sync.vhd" into library lib_cdc_v1_0_2
+INFO: [VRFC 10-307] analyzing entity cdc_sync
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/upcnt_n.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity upcnt_n
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/sequence_psr.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity sequence_psr
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/lpf.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity lpf
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/proc_sys_reset_v5_0/hdl/src/vhdl/proc_sys_reset.vhd" into library proc_sys_reset_v5_0_8
+INFO: [VRFC 10-307] analyzing entity proc_sys_reset
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/sim/design_1_rst_clk_wiz_1_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_rst_clk_wiz_1_100M_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity full_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplier
+WARNING: [VRFC 10-280] actual for formal port a is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/multiplier.vhd:51]
+WARNING: [VRFC 10-280] actual for formal port a is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/multiplier.vhd:52]
+WARNING: [VRFC 10-280] actual for formal port a is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/multiplier.vhd:53]
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/half_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity half_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BinaryToBCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BinaryToBCD
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BCD_multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BCD_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/N_digit_BCD_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity N_digit_BCD_adder
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_1x8_multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BCD_1x8_multiplier
+WARNING: [VRFC 10-280] actual for formal port input2 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_1x8_multiplier.vhd:86]
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BCD_8x8_multiplier
+WARNING: [VRFC 10-280] actual for formal port input1 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:210]
+WARNING: [VRFC 10-280] actual for formal port input1 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:212]
+WARNING: [VRFC 10-280] actual for formal port input1 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:214]
+WARNING: [VRFC 10-280] actual for formal port input1 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:216]
+WARNING: [VRFC 10-280] actual for formal port input1 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:219]
+WARNING: [VRFC 10-280] actual for formal port input2 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:220]
+WARNING: [VRFC 10-280] actual for formal port input1 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:221]
+WARNING: [VRFC 10-280] actual for formal port input2 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:222]
+WARNING: [VRFC 10-280] actual for formal port input1 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:224]
+WARNING: [VRFC 10-280] actual for formal port input2 is neither a static name nor a globally static expression [E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/src/BCD_8x8_multiplier.vhd:225]
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/hdl/myip_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity myip_v1_0_S00_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ipshared/xilinx.com/myip_v1_0/hdl/myip_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity myip_v1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/ip/design_1_myip_0_0/sim/design_1_myip_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_myip_0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/fifo_generator_v13_0/simulation/fifo_generator_vhdl_beh.vhd" into library fifo_generator_v13_0_1
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_bhv_as
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_bhv_ss
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_bhv_preload0
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_conv
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_axic_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_vhdl_beh
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/fifo_generator_v13_0/hdl/fifo_generator_v13_0_rfs.vhd" into library fifo_generator_v13_0_1
+INFO: [VRFC 10-307] analyzing entity input_blk
+INFO: [VRFC 10-307] analyzing entity output_blk
+INFO: [VRFC 10-307] analyzing entity shft_wrapper
+INFO: [VRFC 10-307] analyzing entity shft_ram
+INFO: [VRFC 10-307] analyzing entity wr_pf_as
+INFO: [VRFC 10-307] analyzing entity wr_pf_ss
+INFO: [VRFC 10-307] analyzing entity rd_pe_as
+INFO: [VRFC 10-307] analyzing entity rd_pe_ss
+INFO: [VRFC 10-307] analyzing entity synchronizer_ff
+INFO: [VRFC 10-307] analyzing entity delay
+INFO: [VRFC 10-307] analyzing entity bin_cntr
+INFO: [VRFC 10-307] analyzing entity clk_x_pntrs_builtin
+INFO: [VRFC 10-307] analyzing entity logic_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth
+INFO: [VRFC 10-307] analyzing entity builtin_top
+INFO: [VRFC 10-307] analyzing entity reset_builtin
+INFO: [VRFC 10-307] analyzing entity builtin_prim_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_v6
+INFO: [VRFC 10-307] analyzing entity builtin_extdepth_low_latency
+INFO: [VRFC 10-307] analyzing entity builtin_top_v6
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_builtin
+INFO: [VRFC 10-307] analyzing entity bram_sync_reg
+INFO: [VRFC 10-307] analyzing entity bram_fifo_rstlogic
+INFO: [VRFC 10-307] analyzing entity reset_blk_ramfifo
+INFO: [VRFC 10-307] analyzing entity axi_reg_slice
+INFO: [VRFC 10-307] analyzing entity fifo_generator_top
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1_synth
+INFO: [VRFC 10-307] analyzing entity fifo_generator_v13_0_1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/bd/design_1/hdl/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity m00_couplers_imp_8RVYHO
+INFO: [VRFC 10-307] analyzing entity m01_couplers_imp_1UTB3Y5
+INFO: [VRFC 10-307] analyzing entity microblaze_0_local_memory_imp_1K0VQXK
+INFO: [VRFC 10-307] analyzing entity s00_couplers_imp_1RZP34U
+INFO: [VRFC 10-307] analyzing entity design_1_microblaze_0_axi_periph_0
+INFO: [VRFC 10-307] analyzing entity design_1
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity design_1_wrapper
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/courses/University_courses/Design_Automation/project/project_2/project_2.srcs/sources_1/new/testben.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity testben

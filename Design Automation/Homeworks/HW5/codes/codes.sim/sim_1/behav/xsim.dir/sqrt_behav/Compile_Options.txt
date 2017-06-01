@@ -1,1 +1,0 @@
--wto "5e4d1130fc9a4976afe717af8b0ade51" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "sqrt_behav" "xil_defaultlib.sqrt" -log "elaborate.log" 

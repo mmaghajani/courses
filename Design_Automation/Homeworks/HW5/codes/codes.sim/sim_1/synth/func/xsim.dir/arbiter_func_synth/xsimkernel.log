@@ -1,0 +1,7 @@
+Running: xsim.dir/arbiter_func_synth/xsimk.exe -simmode gui -wdb arbiter_func_synth.wdb -simrunnum 0 -socket 3782
+Design successfully loaded
+Design Loading Memory Usage: 9096 KB (Peak: 9096 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 10096 KB (Peak: 10096 KB)
+Simulation CPU Usage: 77 ms

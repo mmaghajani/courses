@@ -1,0 +1,22 @@
+11:07:41 INFO  : Registering command handlers for SDK TCF services
+11:07:41 INFO  : Launching XSCT server: xsct.bat -interactive D:\courses\University\Design\temp_xsdb_launch_script.tcl
+11:07:44 INFO  : XSCT server has started successfully.
+11:07:44 INFO  : Successfully done setting XSCT server connection channel  
+11:07:44 INFO  : Processing command line option -hwspec D:/courses/University/Design.
+11:07:44 INFO  : Successfully done setting SDK workspace  
+11:07:45 ERROR : Error occurred while creating hardware platform Design_hw_platform_0 from sysdef
+java.io.FileNotFoundException: D:\courses\University\Design (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:536)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:517)
+	at com.xilinx.sdk.startup.InitSDK$13.run(InitSDK.java:468)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+11:07:45 ERROR : Unable to create Hardware Specification Project with specification file: D:/courses/University/Design

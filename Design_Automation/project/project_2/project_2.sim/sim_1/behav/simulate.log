@@ -1,0 +1,6 @@
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance testben.l1.design_1_i.clk_wiz_1.inst.mmcm_adv_inst 
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance testben.l1.design_1_i.clk_wiz_1.inst.mmcm_adv_inst 
+Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
+Time: 4340 ns  Iteration: 7  Process: /testben/l1/design_1_i/microblaze_0_local_memory/lmb_bram/U0/native_mem_map_module/mem_map_module/line__3418  File: E:/courses/University_courses/Design_Automation/project/project_2/project_2.ip_user_files/ipstatic/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.vhd

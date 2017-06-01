@@ -1,0 +1,3 @@
+20:15:05 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:15:11 INFO  : XSDB server has started successfully.
+20:15:14 INFO  : Processing command line option -hwspec E:/courses/University_courses/Design_Automation/project/project_2/project_2.sdk/design_1_wrapper.hdf.

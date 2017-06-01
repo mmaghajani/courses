@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun May 21 19:55:36 2017
+# Process ID: 8372
+# Current directory: E:/courses/University_courses/Design_Automation/project/project_2/project_2.runs/synth_1
+# Command line: vivado.exe -log BCD_8x8_multiplier.vds -mode batch -messageDb vivado.pb -notrace -source BCD_8x8_multiplier.tcl
+# Log file: E:/courses/University_courses/Design_Automation/project/project_2/project_2.runs/synth_1/BCD_8x8_multiplier.vds
+# Journal file: E:/courses/University_courses/Design_Automation/project/project_2/project_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source BCD_8x8_multiplier.tcl -notrace

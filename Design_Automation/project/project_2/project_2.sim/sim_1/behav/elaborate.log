@@ -1,0 +1,228 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto 854e0b0eecfe48d9b3279cd92bcb6664 --debug typical --relax --mt 2 -L microblaze_v9_5_3 -L xil_defaultlib -L lmb_v10_v3_0_7 -L lmb_bram_if_cntlr_v4_0_7 -L blk_mem_gen_v8_3_1 -L axi_lite_ipif_v3_0_3 -L mdm_v3_2_4 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_8 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_7 -L fifo_generator_v13_0_1 -L axi_data_fifo_v2_1_6 -L axi_crossbar_v2_1_8 -L unisims_ver -L unimacro_ver -L secureip --snapshot testben_behav xil_defaultlib.testben xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package axi_lite_ipif_v3_0_3.ipif_pkg
+Compiling package std.textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package microblaze_v9_5_3.microblaze_types
+Compiling package microblaze_v9_5_3.microblaze_isa
+Compiling package microblaze_v9_5_3.mmu_types
+Compiling package lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_funcs
+Compiling package ieee.std_logic_textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=5.0,CLK...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_1_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_1_0
+Compiling architecture bscane2_v of entity unisim.BSCANE2 [\BSCANE2("FALSE",2)(1,5)\]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.pselect_f [\pselect_f(2,2,"00","nofamily")(...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.pselect_f [\pselect_f(2,2,"01","nofamily")(...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.pselect_f [\pselect_f(2,2,"10","nofamily")(...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.pselect_f [\pselect_f(2,2,"11","nofamily")(...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.address_decoder [\address_decoder(4,"000000000000...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.slave_attachment [\slave_attachment(("000000000000...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_3.axi_lite_ipif [\axi_lite_ipif(32,32,"0000000000...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE('0','0','0','0')\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("0000000000000010")(0,15)\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0000000101100111",'0')(...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0100001010100111",'0')(...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0100010001000011",'0')(...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0101100001001101",'0')(...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1111111111001010")(0,15)\]
+Compiling architecture fdrse_v of entity unisim.FDRSE [\FDRSE('0','0','0','0','0','0')\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0000000000000000",'0')(...]
+Compiling architecture imp of entity mdm_v3_2_4.SRL_FIFO [\SRL_FIFO(8,16)\]
+Compiling architecture fdce_v of entity unisim.FDCE [\FDCE('0','0','0','0')\]
+Compiling architecture fdc_1_v of entity unisim.FDC_1 [\FDC_1('0')\]
+Compiling architecture fdre_1_v of entity unisim.FDRE_1 [\FDRE_1('0')\]
+Compiling architecture imp of entity mdm_v3_2_4.JTAG_CONTROL [\JTAG_CONTROL(1,0,0,0,32,32,0,1,...]
+Compiling architecture imp of entity mdm_v3_2_4.MDM_Core [\MDM_Core(2,0,0,"111111111111111...]
+Compiling architecture imp of entity mdm_v3_2_4.MDM [\MDM("virtex7",2,0,0,2,"11111111...]
+Compiling architecture design_1_mdm_1_0_arch of entity xil_defaultlib.design_1_mdm_1_0 [design_1_mdm_1_0_default]
+Compiling architecture imp of entity microblaze_v9_5_3.DAXI_interface [\DAXI_interface(1,32,32,false,fa...]
+Compiling architecture and2b1l_v of entity unisim.AND2B1L [\AND2B1L('0')\]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_AND2B1L [\MB_AND2B1L(virtex7,'0')\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("1111111111111111",'0')(...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_SRL16E [\MB_SRL16E("yes",true,"111111111...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0011111111111111",'0')(...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_SRL16E [\MB_SRL16E("yes",true,"001111111...]
+Compiling architecture srlc16e_v of entity unisim.SRLC16E [\SRLC16E("0000000000000000",'0')...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_SRLC16E [\MB_SRLC16E("yes","0000000000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.address_hit [\address_hit(virtex7,true,false,...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0000000000011011",'0')(...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_SRL16E [\MB_SRL16E("yes",true,"000000000...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0000000000000000",'0')(...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_SRL16E [\MB_SRL16E("yes",true,"000000000...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0000000001100100",'0')(...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_SRL16E [\MB_SRL16E("yes",true,"000000000...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("0010001000000000",'0')(...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_SRL16E [\MB_SRL16E("yes",true,"001000100...]
+Compiling architecture imp of entity microblaze_v9_5_3.mb_sync_bit [\mb_sync_bit(1,'0',false,true)\]
+Compiling architecture imp of entity microblaze_v9_5_3.mb_sync_vec [\mb_sync_vec(1,'0',false,true,16...]
+Compiling architecture imp of entity microblaze_v9_5_3.mb_sync_vec [\mb_sync_vec(2,'0',true,true,9)\]
+Compiling architecture imp of entity microblaze_v9_5_3.mb_sync_bit [\mb_sync_bit(1,'0',true,true)\]
+Compiling architecture imp of entity microblaze_v9_5_3.Debug [\Debug("000000000000000000000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.interrupt_mode_converter [\interrupt_mode_converter(false,...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6("1001000000001001000000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(virtex7,"10010000000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6("1001000000001001000000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(virtex7,"10010000000010...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_FDRE [\MB_FDRE(virtex7,'0')\]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_MUXCY_XORCY [\MB_MUXCY_XORCY(virtex7)\]
+Compiling architecture muxf7_v of entity unisim.MUXF7 [muxf7_default]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_MUXF7 [\MB_MUXF7(virtex7)\]
+Compiling architecture fdr_v of entity unisim.FDR [\FDR('0')\]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_FDR [\MB_FDR(virtex7,'0')\]
+Compiling architecture imp of entity microblaze_v9_5_3.PC_Module_gti [\PC_Module_gti(virtex7,true,0,fa...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6("0000000000000000000000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(virtex7,"00000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6("0000000000000000111111111...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(virtex7,"00000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6("1111111100000000111111111...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(virtex7,"11111111000000...]
+Compiling architecture fdse_v of entity unisim.FDSE [\FDSE('1','0','0','0')\]
+Compiling architecture fds_v of entity unisim.FDS [\FDS('1')\]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_FDS [\MB_FDS(virtex7,'1')\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6("0000000011111111000000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(virtex7,"00000000111111...]
+Compiling architecture imp of entity microblaze_v9_5_3.PreFetch_Buffer_gti [\PreFetch_Buffer_gti(true,virtex...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_MUXCY [\MB_MUXCY(virtex7)\]
+Compiling architecture imp of entity microblaze_v9_5_3.carry_and [\carry_and(virtex7)\]
+Compiling architecture imp of entity microblaze_v9_5_3.jump_logic [\jump_logic(virtex7)\]
+Compiling architecture imp of entity microblaze_v9_5_3.carry_or [\carry_or(virtex7)\]
+Compiling architecture imp of entity microblaze_v9_5_3.Decode_gti [\Decode_gti(virtex7,true,"000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2("00000000111111110000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6_2 [\MB_LUT6_2(virtex7,"000000001111...]
+Compiling architecture ram32m_v of entity unisim.RAM32M [\RAM32M("00000000000000000000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_RAM32M [\MB_RAM32M(virtex7,"yes","000000...]
+Compiling architecture imp of entity microblaze_v9_5_3.Register_File_gti [\Register_File_gti(virtex7,"yes"...]
+Compiling architecture imp of entity microblaze_v9_5_3.Operand_Select_gti [\Operand_Select_gti(true,virtex7...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2("01100000011110101010011...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6_2 [\MB_LUT6_2(virtex7,"011000000111...]
+Compiling architecture imp of entity microblaze_v9_5_3.ALU_Bit [\ALU_Bit(virtex7,true,false)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6("0110000001111010101001100...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(virtex7,"01100000011110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4("1111101000001010")(0,15)\]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT4 [\MB_LUT4(virtex7,"11111010000010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_MULT_AND [\MB_MULT_AND(virtex7,'0')\]
+Compiling architecture imp of entity microblaze_v9_5_3.ALU_Bit [\ALU_Bit(virtex7,true,true)\]
+Compiling architecture imp of entity microblaze_v9_5_3.ALU [\ALU(0,true,virtex7)\]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(rtl,"110010101010101011...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(rtl,"110010101010111111...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6 [\MB_LUT6(rtl,"110010101111111111...]
+Compiling architecture imp of entity microblaze_v9_5_3.Shift_Logic_Module_gti [\Shift_Logic_Module_gti(false,tr...]
+Compiling architecture imp of entity microblaze_v9_5_3.mul_unit [\mul_unit(virtex7,false,false)\]
+Compiling architecture imp of entity microblaze_v9_5_3.Barrel_Shifter_gti [\Barrel_Shifter_gti(virtex7,true...]
+Compiling architecture imp of entity microblaze_v9_5_3.WB_Mux_Bit [\WB_Mux_Bit(virtex7,6,2)\]
+Compiling architecture imp of entity microblaze_v9_5_3.WB_Mux [\WB_Mux(virtex7,false,false,fals...]
+Compiling architecture imp of entity microblaze_v9_5_3.Zero_Detect_gti [\Zero_Detect_gti(virtex7)\]
+Compiling architecture imp of entity microblaze_v9_5_3.Byte_Doublet_Handle_gti [\Byte_Doublet_Handle_gti(virtex7...]
+Compiling architecture imp of entity microblaze_v9_5_3.Data_Flow_Logic [\Data_Flow_Logic(virtex7,0,16)\]
+Compiling architecture msr_reg of entity microblaze_v9_5_3.msr_reg_gti [\msr_reg_gti(virtex7,"0000000000...]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2("11111111000000001111000...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6_2 [\MB_LUT6_2(virtex7,"111111110000...]
+Compiling architecture imp of entity microblaze_v9_5_3.mux_bus [\mux_bus(virtex7,true,32)\]
+Compiling architecture lut6_2_v of entity unisim.LUT6_2 [\LUT6_2("10010110100101101001011...]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_LUT6_2 [\MB_LUT6_2(virtex7,"100101101001...]
+Compiling architecture fde_v of entity unisim.FDE [\FDE('0')\]
+Compiling architecture imp of entity microblaze_v9_5_3.MB_FDE [\MB_FDE(virtex7,'0')\]
+Compiling architecture imp of entity microblaze_v9_5_3.exception_registers_gti [\exception_registers_gti(virtex7...]
+Compiling architecture imp of entity microblaze_v9_5_3.Fpu [\Fpu(virtex7,0,0,"yes")(1,3)\]
+Compiling architecture imp of entity microblaze_v9_5_3.PVR [\PVR(0,"00100010","00000000",0,1...]
+Compiling architecture imp of entity microblaze_v9_5_3.Data_Flow_gti [\Data_Flow_gti(32,virtex7,true,0...]
+Compiling architecture imp of entity microblaze_v9_5_3.read_data_mux [\read_data_mux(true,true,false)\]
+Compiling architecture imp of entity microblaze_v9_5_3.instr_mux [\instr_mux(virtex7,true,false,fa...]
+Compiling architecture imp of entity microblaze_v9_5_3.MMU [\MMU(virtex7,true,0,0,4,2,false,...]
+Compiling architecture imp of entity microblaze_v9_5_3.MicroBlaze_GTi [\MicroBlaze_GTi(2,1,2,1,0,0,0,1,...]
+Compiling architecture imp of entity microblaze_v9_5_3.mb_sync_bit [\mb_sync_bit(2,'0',true,true)\]
+Compiling architecture imp of entity microblaze_v9_5_3.MicroBlaze_Core [\MicroBlaze_Core(0,100000000,0,2...]
+Compiling architecture imp of entity microblaze_v9_5_3.MicroBlaze [\MicroBlaze(0,100000000,0,2,1,2,...]
+Compiling architecture design_1_microblaze_0_0_arch of entity xil_defaultlib.design_1_microblaze_0_0 [design_1_microblaze_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.m00_couplers_imp_8RVYHO [m00_couplers_imp_8rvyho_default]
+Compiling architecture structure of entity xil_defaultlib.m01_couplers_imp_1UTB3Y5 [m01_couplers_imp_1utb3y5_default]
+Compiling architecture structure of entity xil_defaultlib.s00_couplers_imp_1RZP34U [s00_couplers_imp_1rzp34u_default]
+Compiling module axi_crossbar_v2_1_8.axi_crossbar_v2_1_8_addr_arbiter...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_8.axi_crossbar_v2_1_8_addr_decoder...
+Compiling module axi_crossbar_v2_1_8.axi_crossbar_v2_1_8_splitter(C_N...
+Compiling module axi_crossbar_v2_1_8.axi_crossbar_v2_1_8_splitter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_7.axi_register_slice_v2_1_7_axic_r...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_8.axi_crossbar_v2_1_8_decerr_slave...
+Compiling module axi_crossbar_v2_1_8.axi_crossbar_v2_1_8_crossbar_sas...
+Compiling module axi_crossbar_v2_1_8.axi_crossbar_v2_1_8_axi_crossbar...
+Compiling module xil_defaultlib.design_1_xbar_0
+Compiling architecture structure of entity xil_defaultlib.design_1_microblaze_0_axi_periph_0 [design_1_microblaze_0_axi_periph...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_7.pselect_mask [\pselect_mask(32,"00000000000000...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_7.lmb_mux [\lmb_mux("0000000000000000000000...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_cntlr [\lmb_bram_if_cntlr("virtex7","00...]
+Compiling architecture design_1_dlmb_bram_if_cntlr_0_arch of entity xil_defaultlib.design_1_dlmb_bram_if_cntlr_0 [design_1_dlmb_bram_if_cntlr_0_de...]
+Compiling architecture imp of entity lmb_v10_v3_0_7.lmb_v10 [\lmb_v10(1,32,32,1)\]
+Compiling architecture design_1_dlmb_v10_0_arch of entity xil_defaultlib.design_1_dlmb_v10_0 [design_1_dlmb_v10_0_default]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_7.pselect_mask [\pselect_mask(32,"00000000000000...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_7.lmb_mux [\lmb_mux("0000000000000000000000...]
+Compiling architecture imp of entity lmb_bram_if_cntlr_v4_0_7.lmb_bram_if_cntlr [\lmb_bram_if_cntlr("virtex7","00...]
+Compiling architecture design_1_ilmb_bram_if_cntlr_0_arch of entity xil_defaultlib.design_1_ilmb_bram_if_cntlr_0 [design_1_ilmb_bram_if_cntlr_0_de...]
+Compiling architecture design_1_ilmb_v10_0_arch of entity xil_defaultlib.design_1_ilmb_v10_0 [design_1_ilmb_v10_0_default]
+Compiling architecture output_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_output_stage [\blk_mem_gen_v8_3_1_output_stage...]
+Compiling architecture softecc_output_reg_stage_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_softecc_output_reg_stage [\blk_mem_gen_v8_3_1_softecc_outp...]
+Compiling architecture mem_module_behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1_mem_module [\blk_mem_gen_v8_3_1_mem_module("...]
+Compiling architecture behavioral of entity blk_mem_gen_v8_3_1.blk_mem_gen_v8_3_1 [\blk_mem_gen_v8_3_1("blk_mem_gen...]
+Compiling architecture design_1_lmb_bram_0_arch of entity xil_defaultlib.design_1_lmb_bram_0 [design_1_lmb_bram_0_default]
+Compiling architecture structure of entity xil_defaultlib.microblaze_0_local_memory_imp_1K0VQXK [microblaze_0_local_memory_imp_1k...]
+Compiling architecture behavioral of entity xil_defaultlib.half_adder [half_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.full_adder [full_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.BinaryToBCD [binarytobcd_default]
+Compiling architecture structural of entity xil_defaultlib.BCD_multiplier [bcd_multiplier_default]
+Compiling architecture arch of entity xil_defaultlib.BCD_adder [bcd_adder_default]
+Compiling architecture behavioral of entity xil_defaultlib.BCD_1x8_multiplier [bcd_1x8_multiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.N_digit_BCD_adder [\N_digit_BCD_adder(10)\]
+Compiling architecture behavioral of entity xil_defaultlib.N_digit_BCD_adder [\N_digit_BCD_adder(13)\]
+Compiling architecture behavioral of entity xil_defaultlib.N_digit_BCD_adder [\N_digit_BCD_adder(18)\]
+Compiling architecture structural of entity xil_defaultlib.BCD_8x8_multiplier [bcd_8x8_multiplier_default]
+Compiling architecture arch_imp of entity xil_defaultlib.myip_v1_0_S00_AXI [\myip_v1_0_S00_AXI(32,5)\]
+Compiling architecture arch_imp of entity xil_defaultlib.myip_v1_0 [\myip_v1_0(32,5)\]
+Compiling architecture design_1_myip_0_0_arch of entity xil_defaultlib.design_1_myip_0_0 [design_1_myip_0_0_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(1,0,1,0,2,4)\]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E("1111111111111111",'0')(...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16("1111111111111111")(0,15)...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_8.lpf [\lpf(4,4,'1','0')\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_8.upcnt_n [\upcnt_n(6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_8.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_8.proc_sys_reset [\proc_sys_reset("virtex7",4,4,'1...]
+Compiling architecture design_1_rst_clk_wiz_1_100m_0_arch of entity xil_defaultlib.design_1_rst_clk_wiz_1_100M_0 [design_1_rst_clk_wiz_1_100m_0_de...]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture structure of entity xil_defaultlib.design_1_wrapper [design_1_wrapper_default]
+Compiling architecture behavioral of entity xil_defaultlib.testben
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot testben_behav

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7vx485tffg1761-2" LaunchTime="1495380333">
+  <File Type="RDS-DCP" Name="BCD_8x8_multiplier.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RDS-UTIL-PB" Name="BCD_8x8_multiplier_utilization_synth.pb"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+  <File Type="RDS-PROPCONSTRS" Name="BCD_8x8_multiplier_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="BCD_8x8_multiplier.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="RDS-RDS" Name="BCD_8x8_multiplier.vds"/>
+  <File Type="RDS-UTIL" Name="BCD_8x8_multiplier_utilization_synth.rpt"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="BCD_8x8_multiplier_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="BCD_8x8_multiplier_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/code/full_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/full_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1488727801"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1489483927"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/BinaryToBCD.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/BinaryToBCD.vhd"/>
+        <Attr Name="ImportTime" Val="1490780008"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/half_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/half_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1488728051"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/BCD_multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/BCD_multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1490780451"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/BCD_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/BCD_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1490789100"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/N_digit_BCD_adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/N_digit_BCD_adder.vhd"/>
+        <Attr Name="ImportTime" Val="1490843477"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/BCD_1x8_multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/BCD_1x8_multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1490782747"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/code/BCD_8x8_multiplier.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/mma/Desktop/mohammadmahdi_aghajani_9331056_phase_two/code/BCD_8x8_multiplier.vhd"/>
+        <Attr Name="ImportTime" Val="1495371384"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="BCD_8x8_multiplier"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
