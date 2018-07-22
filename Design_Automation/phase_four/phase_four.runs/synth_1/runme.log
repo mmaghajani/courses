@@ -1,0 +1,307 @@
+
+*** Running vivado
+    with args -log BCD_divider.vds -m64 -mode batch -messageDb vivado.pb -notrace -source BCD_divider.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source BCD_divider.tcl -notrace
+Command: synth_design -top BCD_divider -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 311.238 ; gain = 140.230
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-1565] actual for formal port bcd is neither a static name nor a globally static expression [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:77]
+WARNING: [Synth 8-1565] actual for formal port number is neither a static name nor a globally static expression [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:81]
+WARNING: [Synth 8-1565] actual for formal port number is neither a static name nor a globally static expression [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'BCD_divider' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:43]
+INFO: [Synth 8-3491] module 'BCDtoBin' declared at 'D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:35' bound to instance 'bcdTObin1' of component 'BCDtoBin' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'BCDtoBin' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'BCDtoBin' (1#1) [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:42]
+INFO: [Synth 8-3491] module 'BCDtoBin' declared at 'D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:35' bound to instance 'bcdTObin2' of component 'BCDtoBin' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:77]
+	Parameter N bound to: 14 - type: integer 
+INFO: [Synth 8-3491] module 'divider' declared at 'D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/divider.vhd:36' bound to instance 'div' of component 'divider' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'divider' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/divider.vhd:47]
+	Parameter N bound to: 14 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'divider' (2#1) [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/divider.vhd:47]
+INFO: [Synth 8-3491] module 'BinToBCD' declared at 'D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BinToBCD.vhd:5' bound to instance 'binTObcd1' of component 'BinToBCD' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'BinToBCD' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BinToBCD.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'BinToBCD' (3#1) [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BinToBCD.vhd:15]
+INFO: [Synth 8-3491] module 'BinToBCD' declared at 'D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BinToBCD.vhd:5' bound to instance 'binTObcd2' of component 'BinToBCD' [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'BCD_divider' (4#1) [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCD_divider.vhd:43]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 338.328 ; gain = 167.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 338.328 ; gain = 167.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 338.328 ; gain = 167.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 436.391 ; gain = 265.383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 15    
+	   2 Input     14 Bit       Adders := 15    
+	   3 Input     14 Bit       Adders := 14    
+	   2 Input      4 Bit       Adders := 84    
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 41    
+	   2 Input      4 Bit        Muxes := 68    
+	   2 Input      1 Bit        Muxes := 52    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 15    
+	   2 Input     14 Bit       Adders := 15    
+	   3 Input     14 Bit       Adders := 14    
++---Registers : 
+	               14 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 41    
+	   2 Input      1 Bit        Muxes := 52    
+Module BinToBCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 42    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 34    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 618.617 ; gain = 447.609
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/courses/University/Design_Automation/project/phase_four/phase_four.srcs/sources_1/new/BCDtoBin.vhd:59]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 618.617 ; gain = 447.609
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 618.617 ; gain = 447.609
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 664.461 ; gain = 493.453
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 664.461 ; gain = 493.453
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 664.461 ; gain = 493.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 674.922 ; gain = 503.914
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   234|
+|3     |LUT1   |    66|
+|4     |LUT2   |   201|
+|5     |LUT3   |   405|
+|6     |LUT4   |   239|
+|7     |LUT5   |   168|
+|8     |LUT6   |   215|
+|9     |FDRE   |    29|
+|10    |IBUF   |    49|
+|11    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+-----------+------+
+|      |Instance    |Module     |Cells |
++------+------------+-----------+------+
+|1     |top         |           |  1640|
+|2     |  bcdTObin1 |BCDtoBin   |   264|
+|3     |  bcdTObin2 |BCDtoBin_0 |    45|
+|4     |  div       |divider    |  1229|
++------+------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 674.922 ; gain = 503.914
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 674.922 ; gain = 400.070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 674.922 ; gain = 503.914
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 283 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 701.719 ; gain = 496.613
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 701.719 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 04 16:04:40 2017...

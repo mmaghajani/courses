@@ -1,0 +1,5 @@
+>> y = heaviside(n) - heaviside(n-5);
+>> f = conv( y , y );
+>> hd = dfilt.dffir(f);
+>> freqz(hd);
+>> 

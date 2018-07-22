@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectOpt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="project_optx.xsd">
+	<SchemaVersion>1.0</SchemaVersion>
+	<Target>
+		<TargetName>micro_project</TargetName>
+		<ToolsetNumber>0x4</ToolsetNumber>
+		<ToolsetName>ARM-ADS</ToolsetName>
+		<TargetOption>
+			<DebugOpt>
+				<uSim>0</uSim>
+				<uTrg>1</uTrg>
+				<nTsel>11</nTsel>
+				<pMon>BIN\CMSIS_AGDI.dll</pMon>
+			</DebugOpt>
+			<TargetDriverDllRegistry>
+				<SetRegEntry>
+					<Number>0</Number>
+					<Key>CMSIS_AGDI</Key>
+					<Name>UL2CM3(-S0 -C0 -P0 -FD1FFFF000 -FC00004000 -FN1 -FF0mk_p128_48mhz -FS000000000 -FL000020000 -FP0($$Device:MKL25Z128xxx4$Flash/MK_P128_48MHZ.FLM))</Name>
+				</SetRegEntry>
+			</TargetDriverDllRegistry>
+		</TargetOption>
+	</Target>
+</ProjectOpt>

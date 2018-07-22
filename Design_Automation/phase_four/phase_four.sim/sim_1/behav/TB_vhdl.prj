@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../phase_four.srcs/sources_1/new/divider.vhd"
+vhdl xil_defaultlib  "../../../phase_four.srcs/sources_1/new/BCDtoBin.vhd"
+vhdl xil_defaultlib  "../../../phase_four.srcs/sources_1/new/BCD_divider.vhd"
+vhdl xil_defaultlib  "../../../phase_four.srcs/sources_1/new/BinToBCD.vhd"
+vhdl xil_defaultlib  "../../../phase_four.srcs/sources_1/new/TB.vhd"
+
+# Do not sort compile order
+nosort

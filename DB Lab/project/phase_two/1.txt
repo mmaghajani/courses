@@ -1,0 +1,68 @@
+ALTER TABLE investment ENABLE ROW LEVEL SECURITY;
+CREATE POLICY user_policy ON investment to investor
+    USING (true)
+    WITH CHECK (username = current_user);
+    
+ALTER TABLE product_ownership ENABLE ROW LEVEL SECURITY;
+ALTER TABLE product ENABLE ROW LEVEL SECURITY;
+ALTER TABLE idea ENABLE ROW LEVEL SECURITY;
+ALTER TABLE media ENABLE ROW LEVEL SECURITY;
+CREATE POLICY user_policy ON product_ownership to thinker
+    USING (username = current_user);
+CREATE POLICY user_policy ON product to thinker
+    USING (username = current_user);
+CREATE POLICY user_policy ON idea to thinker
+    USING (username = current_user);
+CREATE POLICY user_policy ON media to thinker
+    USING (username = current_user);
+
+ALTER TABLE public.event ENABLE ROW LEVEL SECURITY;
+ALTER TABLE small_event ENABLE ROW LEVEL SECURITY;
+ALTER TABLE massive_event ENABLE ROW LEVEL SECURITY;		
+ALTER TABLE financial_log ENABLE ROW LEVEL SECURITY;
+ALTER TABLE survay ENABLE ROW LEVEL SECURITY;
+ALTER TABLE promotion_event ENABLE ROW LEVEL SECURITY;
+ALTER TABLE promotion_package ENABLE ROW LEVEL SECURITY;
+ALTER TABLE secretariat_telephone_massive_event ENABLE ROW LEVEL SECURITY;
+ALTER TABLE massive_event_intercommunity ENABLE ROW LEVEL SECURITY;
+CREATE POLICY user_policy ON public.event to conductor
+    USING (conductor_username = current_user);
+CREATE POLICY user_policy ON small_event to conductor
+    USING (conductor_username = current_user);
+CREATE POLICY user_policy ON massive_event to conductor
+    USING (conductor_username = current_user);
+CREATE POLICY user_policy ON financial_log to conductor
+    USING (conductor_username = current_user);
+CREATE POLICY user_policy ON survay to conductor
+    USING (conductor_username = current_user);
+CREATE POLICY user_policy ON promotion_event to conductor
+    USING (conductor_username = current_user);
+CREATE POLICY user_policy ON promotion_package to conductor
+    USING (conductor_username = current_user);
+CREATE POLICY user_policy ON secretariat_telephone_massive_event to conductor
+    USING (conductor_username = current_user);
+CREATE POLICY user_policy ON massive_event_intercommunity to conductor
+    USING (conductor_username = current_user);
+    
+ALTER TABLE massive_event_intercommunity ENABLE ROW LEVEL SECURITY;
+CREATE POLICY user_policy_con ON massive_event_intercommunity to consultant
+    USING (type_of_calling = 'consultant');
+
+CREATE POLICY user_policy_ref ON massive_event_intercommunity to refree
+    USING (type_of_calling = 'refree');
+    
+GRANT insert on register_event,public.user,occupation,os_user,job to users;
+
+GRANT users to investor;
+GRANT select,update,delete,insert on investment to investor;
+
+GRANT users to thinker;
+GRANT insert,select,update on product_ownership,product,idea,media to thinker;
+
+GRANT users to conductor;
+GRANT insert,delete,update on public.event,small_event,massive_event,financial_log,survay,promotion_event,
+		promotion_package,secretariat_telephone_massive_event,massive_event_intercommunity to conductor;
+
+GRANT update(point_of_product,status_of_product),select(point_of_product,status_of_product) on massive_event_intercommunity to consultant,refree;
+
+GRANT ALL PRIVILEGES on ALL TABLES IN SCHEMA public to manager;

@@ -1,0 +1,487 @@
+-- Table: public.organization
+
+-- DROP TABLE public.organization;
+
+CREATE TABLE public.organization
+(
+  code serial NOT NULL,
+  name character varying(30),
+  boss_name character varying(30),
+  successor_name character varying(30),
+  CONSTRAINT organization_pkey PRIMARY KEY (code)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.organization
+  OWNER TO postgres;
+
+-- Table: public.job
+
+-- DROP TABLE public.job;
+
+CREATE TABLE public.job
+(
+  id serial NOT NULL,
+  name character varying(30),
+  CONSTRAINT job_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.job
+  OWNER TO postgres;
+
+-- Table: public."user"
+
+-- DROP TABLE public."user";
+
+CREATE TABLE public."user"
+(
+  id serial NOT NULL,
+  name character varying(30),
+  family character varying(30),
+  password character varying(30),
+  national_code integer,
+  gender boolean,
+  email character varying(30),
+  first_phone_number integer,
+  second_phone_number integer,
+  latin_name character varying(50),
+  latin_family character varying(50),
+  grade character varying(30),
+  degree character varying(30),
+  field character varying(30),
+  institute character varying(30),
+  telephone integer,
+  address character varying(50),
+  postal_code integer,
+  location character varying(50),
+  CONSTRAINT user_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public."user"
+  OWNER TO postgres;
+
+-- Table: public.os_user
+
+-- DROP TABLE public.os_user;
+
+CREATE TABLE public.os_user
+(
+  id serial NOT NULL,
+  user_id integer,
+  os_name character varying(30),
+  CONSTRAINT os_user_pkey PRIMARY KEY (id),
+  CONSTRAINT os_user_user_id_fkey FOREIGN KEY (user_id)
+      REFERENCES public."user" (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.os_user
+  OWNER TO postgres;
+
+
+-- Table: public.product
+
+-- DROP TABLE public.product;
+
+CREATE TABLE public.product
+(
+  id serial NOT NULL,
+  subject character varying(30),
+  description text,
+  "references" character varying(50),
+  key_words character varying(50),
+  CONSTRAINT product_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.product
+  OWNER TO postgres;
+
+-- Table: public.media
+
+-- DROP TABLE public.media;
+
+CREATE TABLE public.media
+(
+  id serial NOT NULL,
+  product_id integer,
+  registry_number integer,
+  registry_date date,
+  registration_body character varying(30),
+  certifications character varying(50),
+  CONSTRAINT media_pkey PRIMARY KEY (id),
+  CONSTRAINT media_product_id_fkey FOREIGN KEY (product_id)
+      REFERENCES public.product (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.media
+  OWNER TO postgres;
+
+-- Table: public.idea
+
+-- DROP TABLE public.idea;
+
+CREATE TABLE public.idea
+(
+  id serial NOT NULL,
+  product_id integer,
+  CONSTRAINT idea_pkey PRIMARY KEY (id),
+  CONSTRAINT idea_product_id_fkey FOREIGN KEY (product_id)
+      REFERENCES public.product (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.idea
+  OWNER TO postgres;
+
+-- Table: public.financial_log
+
+-- DROP TABLE public.financial_log;
+
+CREATE TABLE public.financial_log
+(
+  id serial NOT NULL,
+  payment_information character varying(50),
+  transaction_information character varying(50),
+  CONSTRAINT financial_log_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.financial_log
+  OWNER TO postgres;
+
+-- Table: public.event
+
+-- DROP TABLE public.event;
+
+CREATE TABLE public.event
+(
+  id serial NOT NULL,
+  type character varying(30),
+  subject character varying(30),
+  is_active boolean,
+  gregorian_date date,
+  solar_date character varying(30),
+  language character varying(30),
+  financial_log_id integer,
+  conductor_user_id integer,
+  CONSTRAINT event_pkey PRIMARY KEY (id),
+  CONSTRAINT event_conductor_user_id_fkey FOREIGN KEY (conductor_user_id)
+      REFERENCES public."user" (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT event_financial_log_id_fkey FOREIGN KEY (financial_log_id)
+      REFERENCES public.financial_log (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.event
+  OWNER TO postgres;
+
+-- Table: public.survay
+
+-- DROP TABLE public.survay;
+
+CREATE TABLE public.survay
+(
+  id serial NOT NULL,
+  form_name character varying(30),
+  options character varying(50),
+  CONSTRAINT survay_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.survay
+  OWNER TO postgres;
+
+-- Table: public.small_event
+
+-- DROP TABLE public.small_event;
+
+CREATE TABLE public.small_event
+(
+  id serial NOT NULL,
+  event_id integer,
+  title character varying(30),
+  date_of_triggering date,
+  date_of_notify date,
+  date_of_finish date,
+  survay_id integer,
+  product_id integer,
+  CONSTRAINT small_event_pkey PRIMARY KEY (id),
+  CONSTRAINT small_event_event_id_fkey FOREIGN KEY (event_id)
+      REFERENCES public.event (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT small_event_product_id_fkey FOREIGN KEY (product_id)
+      REFERENCES public.product (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT small_event_survay_id_fkey FOREIGN KEY (survay_id)
+      REFERENCES public.survay (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.small_event
+  OWNER TO postgres;
+
+-- Table: public.massive_event
+
+-- DROP TABLE public.massive_event;
+
+CREATE TABLE public.massive_event
+(
+  id serial NOT NULL,
+  event_id integer,
+  subtitle character varying(30),
+  basis_of_event character varying(50),
+  registry_deadline date,
+  media_deadline date,
+  judgment_deadline date,
+  judgment_level character varying(30),
+  country character varying(30),
+  city character varying(30),
+  location character varying(30),
+  secretariat_mobile integer,
+  type_of_payment character varying(30),
+  type_of_presentation character varying(30),
+  CONSTRAINT massive_event_pkey PRIMARY KEY (id),
+  CONSTRAINT massive_event_event_id_fkey FOREIGN KEY (event_id)
+      REFERENCES public.event (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.massive_event
+  OWNER TO postgres;
+
+-- Table: public.promotion_package
+
+-- DROP TABLE public.promotion_package;
+
+CREATE TABLE public.promotion_package
+(
+  id serial NOT NULL,
+  package_name character varying(30),
+  options character varying(50),
+  CONSTRAINT promotion_package_pkey PRIMARY KEY (id)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.promotion_package
+  OWNER TO postgres;
+
+-- Table: public.secretariat_telephone_massive_event
+
+-- DROP TABLE public.secretariat_telephone_massive_event;
+
+CREATE TABLE public.secretariat_telephone_massive_event
+(
+  id serial NOT NULL,
+  event_id integer,
+  telephone integer,
+  CONSTRAINT secretariat_telephone_massive_event_pkey PRIMARY KEY (id),
+  CONSTRAINT secretariat_telephone_massive_event_event_id_fkey FOREIGN KEY (event_id)
+      REFERENCES public.massive_event (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.secretariat_telephone_massive_event
+  OWNER TO postgres;
+
+-- Table: public.event_dependent
+
+-- DROP TABLE public.event_dependent;
+
+CREATE TABLE public.event_dependent
+(
+  id serial NOT NULL,
+  massive_event_id integer,
+  small_event_id integer,
+  CONSTRAINT event_dependent_pkey PRIMARY KEY (id),
+  CONSTRAINT event_dependent_massive_event_id_fkey FOREIGN KEY (massive_event_id)
+      REFERENCES public.massive_event (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT event_dependent_small_event_id_fkey FOREIGN KEY (small_event_id)
+      REFERENCES public.small_event (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.event_dependent
+  OWNER TO postgres;
+
+-- Table: public.occupation
+
+-- DROP TABLE public.occupation;
+
+CREATE TABLE public.occupation
+(
+  type_of_relation character varying(30),
+  favorite_subjects character varying(50),
+  skills character varying(50),
+  frequent_subjects character varying(50),
+  workplace character varying(30),
+  expertise character varying(30),
+  type_of_personality character varying(30),
+  id serial NOT NULL,
+  user_id integer,
+  job_id integer,
+  CONSTRAINT occupation_pkey PRIMARY KEY (id),
+  CONSTRAINT occupation_job_id_fkey FOREIGN KEY (job_id)
+      REFERENCES public.job (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT occupation_user_id_fkey FOREIGN KEY (user_id)
+      REFERENCES public."user" (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.occupation
+  OWNER TO postgres;
+
+-- Table: public.product_ownership
+
+-- DROP TABLE public.product_ownership;
+
+CREATE TABLE public.product_ownership
+(
+  id serial NOT NULL,
+  product_id integer,
+  user_id integer,
+  percentage integer,
+  CONSTRAINT product_ownership_pkey PRIMARY KEY (id),
+  CONSTRAINT product_ownership_product_id_fkey FOREIGN KEY (product_id)
+      REFERENCES public.product (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT product_ownership_user_id_fkey FOREIGN KEY (user_id)
+      REFERENCES public."user" (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.product_ownership
+  OWNER TO postgres;
+
+-- Table: public.investment
+
+-- DROP TABLE public.investment;
+
+CREATE TABLE public.investment
+(
+  id serial NOT NULL,
+  product_id integer,
+  user_id integer,
+  withdraw character varying(30),
+  type character varying(30),
+  amount bigint,
+  date date,
+  CONSTRAINT investment_pkey PRIMARY KEY (id),
+  CONSTRAINT investment_product_id_fkey FOREIGN KEY (product_id)
+      REFERENCES public.product (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT investment_user_id_fkey FOREIGN KEY (user_id)
+      REFERENCES public."user" (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.investment
+  OWNER TO postgres;
+
+-- Table: public.register_event
+
+-- DROP TABLE public.register_event;
+
+CREATE TABLE public.register_event
+(
+  id serial NOT NULL,
+  event_id integer,
+  user_id integer,
+  CONSTRAINT register_event_pkey PRIMARY KEY (id),
+  CONSTRAINT register_event_event_id_fkey FOREIGN KEY (event_id)
+      REFERENCES public.event (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT register_event_user_id_fkey FOREIGN KEY (user_id)
+      REFERENCES public."user" (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.register_event
+  OWNER TO postgres;
+
+-- Table: public.massive_event_intercommunity
+
+-- DROP TABLE public.massive_event_intercommunity;
+
+CREATE TABLE public.massive_event_intercommunity
+(
+  id serial NOT NULL,
+  product_id integer,
+  event_id integer,
+  status_of_product character varying(30),
+  point_of_product integer,
+  type_of_calling character varying(30),
+  CONSTRAINT massive_event_intercommunity_pkey PRIMARY KEY (id),
+  CONSTRAINT massive_event_intercommunity_event_id_fkey FOREIGN KEY (event_id)
+      REFERENCES public.massive_event (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT massive_event_intercommunity_product_id_fkey FOREIGN KEY (product_id)
+      REFERENCES public.product (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.massive_event_intercommunity
+  OWNER TO postgres;
+
+-- Table: public.promotion_event
+
+-- DROP TABLE public.promotion_event;
+
+CREATE TABLE public.promotion_event
+(
+  id serial NOT NULL,
+  promotion_id integer,
+  event_id integer,
+  CONSTRAINT promotion_event_pkey PRIMARY KEY (id),
+  CONSTRAINT promotion_event_event_id_fkey FOREIGN KEY (event_id)
+      REFERENCES public.massive_event (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT promotion_event_promotion_id_fkey FOREIGN KEY (promotion_id)
+      REFERENCES public.promotion_package (id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.promotion_event
+  OWNER TO postgres;
+

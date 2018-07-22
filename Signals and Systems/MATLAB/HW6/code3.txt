@@ -1,0 +1,4 @@
+>> n = linspace( -20000000 , 20000000 , 40000000 );
+>> y = sin((0.7*pi).*n)./(pi.*n);
+>> hd = dfilt.dffir(y);
+>> freqz(hd);

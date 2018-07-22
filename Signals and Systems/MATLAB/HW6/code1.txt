@@ -1,0 +1,5 @@
+>> n = linspace( -inf , inf , 1000);
+>> n = linspace( -1000 , 1000 , 2000 );
+>> y = heaviside(n) - heaviside(n-5);
+>> hd = dfilt.dffir(y);
+>> freqz(hd);
